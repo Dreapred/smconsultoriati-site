@@ -6,7 +6,7 @@ Este repositório contém o código‑fonte oficial do site institucional da **S
 
 ```
 site_final/
-├── index.html               # Página principal com hero, serviços, por que escolher a S&M, clientes e contato
+├── index.html               # Página principal com hero, serviços, por que escolher a S&M, call‑to‑action para clientes existentes e formulário de contato
 ├── style.css               # Folha de estilos premium (cores, temas, responsividade e animações)
 ├── script.js               # Lógica de alternância de tema (modo claro/escuro) e animações de scroll
 ├── privacidade.html        # Política de Privacidade (atualizada em 20/11/2025)
@@ -46,24 +46,21 @@ site_final/
 * **Layout premium e responsivo** — O site foi projetado com base em boas práticas de design, utiliza fontes Poppins e Inter e adapta‑se a desktops, tablets e celulares.
 * **Modo claro/escuro** — O script implementa um interruptor de tema no cabeçalho. O modo escolhido é guardado localmente para visitas futuras.
 * **Animações suaves** — Elementos sobem e desvanecem conforme a página é rolada, utilizando Intersection Observer para melhor desempenho.
-* **Portal de Suporte integrado** — O formulário Netlify e o chat TomTicket permitem abrir e acompanhar chamados diretamente a partir do site.
-* **Seções organizadas** — Hero, serviços, por que escolher a S&M, clientes & parceiros (placeholder), contato, rodapé e páginas de termos e privacidade.
+* **Atendimento integrado** — Um formulário do TomTicket direciona potenciais clientes ao time comercial e um botão de Help Desk direciona clientes existentes à central de suporte. Telefones e WhatsApp foram removidos para simplificar o fluxo e centralizar o atendimento.
+* **Seções organizadas** — Hero, serviços, por que escolher a S&M, formulário de contato, rodapé e páginas de termos e privacidade. A antiga seção de clientes & parceiros foi removida para manter o foco nos serviços e benefícios.
 * **SEO e redes sociais** — Metadados Open Graph e de descrição foram incluídos para que links compartilhados em redes mostrem título, descrição e imagem apropriados.
 
 ## 🏢 Dados institucionais
+Este site foi pensado para separar o público interessado (potenciais clientes) dos clientes que já possuem contrato com a S&amp;M. A área de contato direciona novos clientes a um formulário integrado ao nosso Help&nbsp;Desk (TomTicket), enquanto o botão “Acessar Help&nbsp;Desk” leva clientes existentes diretamente à central de chamados.
 
-As seguintes informações são exibidas no rodapé, na seção de contato e nas páginas legais:
+Os dados institucionais básicos (como o endereço de e‑mail) ficam no rodapé:
 
-| Campo                     | Conteúdo                                  |
-|---------------------------|-------------------------------------------|
-| **Portal de Suporte**     | [suporte.smconsultoriati.com.br](https://suporte.smconsultoriati.com.br) |
-| **Aplicativo**            | Meu Suporte — Empresa *smconsultoriati*    |
-| **Telefone / WhatsApp**              | (62) 3602‑8559                             |
-| **Chat direto**           | [Iniciar atendimento](https://suporte.smconsultoriati.com.br/chat/geral?id=EP70093) |
-| **E‑mail**                | suporte@smconsultoriati.com.br             |
-| **Horário de atendimento**| 08h–12h | 13h30–18h                        |
+| Campo          | Conteúdo                                                              |
+|----------------|-----------------------------------------------------------------------|
+| **Help&nbsp;Desk**    | [Acessar Help&nbsp;Desk](https://smconsultoriati.tomticket.com?account=4485952P29092025082411) |
+| **E‑mail**      | [contato@smconsultoriati.com.br](mailto:contato@smconsultoriati.com.br) |
 
-**Observação:** A identidade visual pode ser ajustada via CSS e substituindo as logos na pasta `/img`. O repositório inclui versões de todos os tamanhos para facilitar a personalização.
+**Observação:** A identidade visual pode ser ajustada via CSS e substituindo as logos na pasta `/img`. O repositório inclui versões de todos os tamanhos para facilitar a personalização. As antigas informações de telefone e WhatsApp foram removidas do site para simplificar o contato e direcionar todos os atendimentos via Help&nbsp;Desk ou e‑mail.
 
 ## 🚀 Deploy automático via Netlify
 
@@ -73,7 +70,7 @@ Este projeto está configurado para deploy contínuo na Netlify. Qualquer commit
 
 * **Cores e temas** — Ajuste as variáveis CSS no início de `style.css` para alterar a paleta de cores. Os modos claro e escuro utilizam a mesma base de variáveis.
 * **Logos** — Substitua os arquivos na pasta `img/` mantendo os mesmos nomes para refletir novas versões. O site sempre buscará por `logo.png` no cabeçalho e rodapé, `logo-vertical.png` no hero e `favicon.png` no favicon.
-* **Seção “Clientes & Parceiros”** — As caixas de texto no index servem de placeholder para logos reais. Basta substituir o conteúdo pelas imagens de seus clientes ou parceiros (preferencialmente com dimensões semelhantes) e remover o texto.
+* **Seção de clientes** — A antiga seção “Clientes & Parceiros” foi removida nesta versão. Caso deseje exibir logos ou depoimentos de parceiros e clientes, sugerimos criar uma página ou seção específica, mantendo o foco da homepage nos serviços e diferenciais da S&amp;M.
 * **Páginas legais** — Os arquivos `privacidade.html` e `termos.html` podem ser atualizados para refletir novas obrigações ou políticas. Use as seções e a estrutura já presentes como base.
 
 ## 📃 Licença

@@ -180,6 +180,62 @@ img {
     color: #fff;
 }
 
+/* WhatsApp button */
+.btn-whatsapp {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 28px;
+    border-radius: 6px;
+    background: #25D366; /* cor oficial WhatsApp */
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+.btn-whatsapp:hover {
+    background: #128C7E;
+    color: #ffffff;
+}
+
+/* Contact box for embedded form */
+.contact-box {
+    max-width: 700px;
+    margin: 0 auto;
+    background: var(--surface-color);
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px var(--card-shadow);
+    text-align: center;
+}
+.contact-box p {
+    margin-bottom: 20px;
+    color: var(--text-color);
+    font-size: 1.1rem;
+}
+
+/* Footer social links */
+.footer-social-links {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 12px;
+}
+.footer-social-links a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+.footer-social-links a:hover {
+    color: var(--primary-dark);
+}
+
+/* Footer email */
+.footer-email {
+    font-size: 0.9rem;
+    margin-top: 4px;
+}
+
 /* =================== HERO SUPPORT =================== */
 .hero-support {
     width: 45%;
