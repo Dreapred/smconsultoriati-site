@@ -36,8 +36,7 @@
             <a href="#home">Início</a>
             <a href="#services">Serviços</a>
             <a href="#why">Por que a S&M?</a>
-            <!-- Link direto para o Help Desk para clientes existentes -->
-            <a href="https://smconsultoriati.tomticket.com?account=4485952P29092025082411" class="helpdesk-link" title="Acessar Help Desk">Help Desk</a>
+            <!-- Removido link de Help Desk do menu para evitar duplicação -->
             <a href="#contact" class="btn-primary nav-btn">Contato</a>
             <!-- Dark mode toggle -->
             <button id="theme-toggle" aria-label="Alternar tema" class="theme-toggle">🌙</button>
@@ -53,12 +52,7 @@
             <p>Projetamos e mantemos sua infraestrutura de TI de ponta a ponta — redes, servidores e segurança — para que a tecnologia impulsione o crescimento do seu negócio.</p>
             <a href="#contact" class="btn-primary hero-btn">Solicitar Proposta</a>
         </div>
-        <div class="hero-support">
-            <h2>Já é nosso cliente?</h2>
-            <p>Acesse nosso Help&nbsp;Desk para abrir e acompanhar seus chamados.</p>
-            <!-- Link diretamente para o serviço de suporte TomTicket -->
-            <a href="https://smconsultoriati.tomticket.com?account=4485952P29092025082411" class="btn-secondary hero-support-btn" title="Acessar Help&nbsp;Desk">Acessar Help&nbsp;Desk</a>
-        </div>
+        <!-- A seção de suporte ao cliente foi removida do herói. O acesso ao Help Desk agora está disponível no rodapé e na seção de contato. -->
     </div>
 </section>
 
@@ -164,7 +158,9 @@
         <div class="contact-box" data-animate>
             <p>Interessado em nossos serviços? Envie sua mensagem diretamente para nosso time comercial:</p>
             <iframe src="https://smconsultoriati.tomticket.com/formulario?id=EP70093&account=4485952P29092025091139" style="width: 100%; height: 500px; border-width: 0px; overflow: auto;"></iframe>
-            <a href="https://wa.me/+556236028559?text=Ol%C3%A1%2C" class="btn-whatsapp" title="Conversar via WhatsApp">Falar no WhatsApp</a>
+            <!-- Substituído o botão do WhatsApp por um aviso e um link para o Help Desk -->
+            <p class="helpdesk-msg">Já é nosso cliente? Acesse nosso Help Desk para abrir e acompanhar seus chamados.</p>
+            <a href="https://suporte.smconsultoriati.com.br/" class="btn-secondary" title="Acessar Help Desk">Acessar Help&nbsp;Desk</a>
         </div>
         <!-- Área para clientes existentes está no herói -->
     </div>
@@ -186,11 +182,34 @@
                 <a href="termos.html">Termos de Uso</a>
             </div>
             <div class="footer-social-links">
-                <a href="https://www.facebook.com/smconsultoriati" title="Facebook" target="_blank" rel="noopener">Facebook</a>
-                <a href="https://wa.me/+556236028559?text=Ol%C3%A1%2C" title="WhatsApp" target="_blank" rel="noopener">WhatsApp</a>
-                <a href="https://www.instagram.com/smconsultoriati" title="Instagram" target="_blank" rel="noopener">Instagram</a>
+                <a href="https://www.facebook.com/smconsultoriati" title="Facebook" target="_blank" rel="noopener">
+                    <img src="img/facebook.png" alt="Facebook" style="width:32px; height:32px;" />
+                </a>
+                <a href="https://wa.me/+556236028559?text=Ol%C3%A1%2C" title="WhatsApp" target="_blank" rel="noopener">
+                    <img src="img/whatsapp.png" alt="WhatsApp" style="width:32px; height:32px;" />
+                </a>
+                <a href="https://www.instagram.com/smconsultoriati" title="Instagram" target="_blank" rel="noopener">
+                    <img src="img/instagram.png" alt="Instagram" style="width:32px; height:32px;" />
+                </a>
+                <!-- Adiciona link para o painel de Help Desk -->
+                <a href="https://suporte.smconsultoriati.com.br/" title="Help Desk" target="_blank" rel="noopener">Help Desk</a>
             </div>
         </div>
     </footer>
+    <!-- Script para atendimento online (fixo no rodapé) -->
+    <script type="text/javascript">
+    //<![CDATA[
+    var ttChatLoaderS = document.createElement('script');
+    document.tomticketChatLoaderScriptVersion = 2;
+    ttChatLoaderS.src = 'https://smconsultoriati.tomticket.com/scripts-chat/chat.min.js'
+    + '?id=EP70093'
+    + '&autoOpen=0'
+    + '&hideWhenOffline=0'
+    + '&d=smconsultoriati'
+    + '&ts=' + new Date().getTime()
+    + '&ref=' + encodeURIComponent(document.URL);
+    document.body.appendChild(ttChatLoaderS);
+    //]]>
+    </script>
 </body>
 </html>
