@@ -164,6 +164,57 @@ img {
     cursor: pointer;
 }
 
+.btn-secondary {
+    background: var(--secondary-color);
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.btn-secondary:hover {
+    background: var(--primary-dark);
+    color: #fff;
+}
+
+/* =================== HERO SUPPORT =================== */
+.hero-support {
+    width: 45%;
+    background: var(--surface-color);
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px var(--card-shadow);
+}
+
+.hero-support h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 12px;
+}
+
+.hero-support p {
+    font-size: 1rem;
+    color: var(--muted-text);
+    margin-bottom: 20px;
+}
+
+.hero-support-btn {
+    padding: 14px 28px;
+    border-radius: 6px;
+    background: var(--primary-dark);
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.hero-support-btn:hover {
+    background: var(--primary-color);
+    color: #fff;
+}
 .btn-primary:hover {
     background: var(--primary-color);
 }
@@ -362,7 +413,8 @@ body.dark-mode .form-group textarea {
 }
 
 .footer-logo {
-    height: 40px;
+    height: 70px;
+    width: auto;
 }
 
 .footer-info p {
@@ -384,6 +436,18 @@ body.dark-mode .form-group textarea {
 
 .footer-links a:hover {
     color: var(--primary-dark);
+}
+
+/* ================= FOOTER LOGO CONTAINER ================= */
+.footer-logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    /* Adiciona um plano de fundo mais escuro para destacar a logo sobre o rodapé */
+    background: rgba(0, 47, 82, 0.4);
+    padding: 12px 24px;
+    border-radius: 8px;
 }
 
 /* =================== ANIMATIONS =================== */

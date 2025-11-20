@@ -58,8 +58,7 @@ As seguintes informações são exibidas no rodapé, na seção de contato e nas
 |---------------------------|-------------------------------------------|
 | **Portal de Suporte**     | [suporte.smconsultoriati.com.br](https://suporte.smconsultoriati.com.br) |
 | **Aplicativo**            | Meu Suporte — Empresa *smconsultoriati*    |
-| **Telefone**              | (62) 3602‑8559                             |
-| **WhatsApp**              | (62) 3602‑8559                             |
+| **Telefone / WhatsApp**              | (62) 3602‑8559                             |
 | **Chat direto**           | [Iniciar atendimento](https://suporte.smconsultoriati.com.br/chat/geral?id=EP70093) |
 | **E‑mail**                | suporte@smconsultoriati.com.br             |
 | **Horário de atendimento**| 08h–12h | 13h30–18h                        |
