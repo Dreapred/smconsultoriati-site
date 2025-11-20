@@ -1,44 +1,86 @@
-# S&M Consultoria em TI – Site institucional
+# S&M Consultoria em TI – Site Institucional
 
-Este repositório contém o código-fonte do site institucional da **S&M Consultoria em TI**. O objetivo é disponibilizar uma presença online clara e profissional, apresentando os serviços oferecidos, a metodologia de trabalho, diferenciais, segmentos atendidos, dúvidas frequentes e canais de contato.
+Este repositório contém o código-fonte oficial do site institucional da **S&M Consultoria em TI**, incluindo todas as seções essenciais para apresentação da empresa, descrição de serviços, informações legais e canais de contato. O site foi desenvolvido em HTML, CSS e JavaScript, com layout premium, animações, dark mode e design responsivo.
 
-## Estrutura do Projeto
+---
+
+## 📁 Estrutura do Projeto
 
 ```
 smconsultoriati-site/
 │
-├── index.html         # Página inicial com todas as seções principais
-├── privacidade.html   # Página da Política de Privacidade
-├── termos.html        # Página dos Termos de Uso
-├── style.css          # Folha de estilos global
-├── script.js          # Script JavaScript para funcionalidades básicas
-└── img/               # Pasta para imagens (adicione logo, banners, etc.)
+├── index.html           # Página principal (Hero, Serviços, Sobre, Contato)
+├── style.css            # Estilos premium, responsividade e dark mode
+├── script.js            # Animações, scroll reveal e alternância de tema
+│
+├── privacidade.html     # Política de Privacidade (atualizada em 20/01/2025)
+├── termos.html          # Termos de Uso (atualizado em 20/01/2025)
+│
+└── img/                 # Logos, favicon e imagens utilizadas no site
+    ├── logo.png
+    ├── logo-alt.png
+    ├── logo-vertical.png
+    ├── logo-vertical-alt.png
+    └── favicon.png
 ```
 
-## Seções Principais
+---
 
-- **Início (Hero)**: apresenta a empresa e botões de chamada para ação.
-- **Sobre**: descreve quem somos e nossa experiência.
-- **Serviços**: lista os serviços oferecidos em cartões detalhados.
-- **Como Trabalhamos**: explica nossa metodologia em etapas.
-- **Diferenciais**: destaca nossas principais vantagens competitivas.
-- **Segmentos Atendidos**: mostra os segmentos empresariais que atendemos.
-- **Perguntas Frequentes (FAQ)**: responde dúvidas comuns de clientes.
-- **Contato**: inclui formulário com integração Netlify Forms e informações de contato.
-- **Política de Privacidade** e **Termos de Uso**: páginas separadas com textos jurídicos.
+## 🧩 Funcionalidades do site
 
-## Uso
+- Layout premium com identidade visual da S&M  
+- Modo claro e escuro automático  
+- Animações suaves ao rolar a página  
+- Estrutura responsiva (desktop, tablet e mobile)  
+- Formulário de contato integrado  
+- Seções:
+  - Hero aprimorado  
+  - Serviços (grid premium)  
+  - Sobre nós  
+  - Por que escolher a S&M  
+  - Clientes & Parceiros (customizável)  
+  - Contato  
+  - Rodapé institucional  
+- Páginas legais completas (LGPD)
 
-Você pode subir este site em qualquer serviço de hospedagem estática (Netlify, GitHub Pages, Vercel, etc.). Para isso, basta enviar o conteúdo da pasta `smconsultoriati-site`. Caso utilize o formulário de contato, configure a integração do Netlify Forms ou altere para usar outra solução de sua preferência.
+---
 
-**Observação:** Alguns campos como CNPJ, endereço, e-mail e WhatsApp estão com marcadores `[preencher]`. Substitua pelos dados reais antes de publicar o site.
+## 🏢 Dados oficiais da empresa
 
-## Personalização
+**S&M Consultoria em TI**  
+CNPJ: **44.528.954/0001-47**  
+Cidade: **Catalão – GO**  
+WhatsApp: **(64) 3602-8559**  
+E-mail: **contato@smconsultoriati.com.br**  
+Site: **https://www.smconsultoriati.com.br**
 
-- Adicione seu logotipo e imagens na pasta `img/` e ajuste o código no `index.html` se desejar.
-- Altere as cores em `style.css` modificando as variáveis CSS `--primary-color`, `--secondary-color`, etc.
-- Inclua novas seções ou modifique as existentes conforme a necessidade de seu negócio.
+---
 
-## Licença
+## 🚀 Publicação e Deploy
 
-Este projeto é distribuído com uso livre para fins comerciais ou pessoais, sem garantias. Sinta-se à vontade para adaptar, modificar e melhorar conforme as necessidades da sua empresa.
+Este site está configurado com **deploy automático via Netlify**.  
+Qualquer commit enviado para o branch principal (`main`) dispara um novo deploy.
+
+### Deploy automático inclui:
+- Compilação do novo HTML/CSS/JS  
+- Atualização instantânea do domínio  
+- Certificado SSL renovado automaticamente
+
+---
+
+## ✏️ Personalização
+
+Você pode ajustar:
+
+- Cores → No arquivo `style.css` (variáveis CSS no início)  
+- Logos → Pasta `img/`  
+- Animações → `script.js`  
+- Textos e seções → `index.html`  
+- Páginas legais → `privacidade.html` e `termos.html`
+
+---
+
+## 📜 Licença
+
+Este projeto é de uso exclusivo da **S&M Consultoria em TI**.  
+Modificações são permitidas internamente pela empresa.
