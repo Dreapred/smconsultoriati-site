@@ -1,245 +1,113 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>S&M Consultoria em TI</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header class="header">
-        <div class="container header-container">
-            <a href="#home" class="logo">
-                <img src="img/logo.png" alt="S&M Consultoria em TI" style="height:48px;">
-            </a>
-            <button class="nav-toggle" aria-label="Abrir menu"><span></span></button>
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li><a href="#home">Início</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#servicos">Serviços</a></li>
-                    <li><a href="#como-trabalhamos">Como Trabalhamos</a></li>
-                    <li><a href="#diferenciais">Diferenciais</a></li>
-                    <li><a href="#segmentos">Segmentos</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                    <li><a href="privacidade.html">Política de Privacidade</a></li>
-                    <li><a href="termos.html">Termos de Uso</a></li>
-                </ul>
-            </nav>
+
+<!-- ================= HEADER ================= -->
+<header class="header">
+    <div class="container header-container">
+        <a href="#home" class="logo">
+            <img src="img/logo.png" alt="S&M Consultoria em TI" class="logo-img">
+        </a>
+
+        <nav class="nav">
+            <a href="#home">Início</a>
+            <a href="#services">Serviços</a>
+            <a href="#about">Sobre Nós</a>
+            <a href="#contact" class="btn-primary nav-btn">Contato</a>
+        </nav>
+    </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section id="home" class="hero">
+    <div class="container hero-content">
+        <div class="hero-text">
+            <h1>Soluções Profissionais em Tecnologia</h1>
+            <p>Gerenciamento de infraestrutura, consultoria especializada, segurança, redes, servidores e suporte para empresas que buscam tecnologia com confiabilidade.</p>
+            <a href="#contact" class="btn-primary hero-btn">Fale com a gente</a>
         </div>
-    </header>
-    <section id="home" class="hero">
-        <div class="container">
-            <h1>S&M Consultoria em TI</h1>
-            <p class="subtitle">Soluções em tecnologia para empresas que precisam de estabilidade, segurança e organização no dia a dia.</p>
-            <p>Atuamos com suporte técnico, infraestrutura de redes, servidores e monitoramento proativo, ajudando sua empresa a trabalhar com menos interrupções e mais produtividade. Cuidamos da parte técnica para que você possa focar no seu negócio.</p>
-            <div class="cta">
-                <a href="#contato" class="btn btn-primary">Quero falar com a S&M</a>
-                <a href="#contato" class="btn btn-secondary">Solicitar avaliação de TI</a>
+
+        <div class="hero-img">
+            <img src="img/logo-vertical.png" alt="Logo vertical S&M Consultoria em TI">
+        </div>
+    </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section id="services" class="section">
+    <div class="container">
+        <h2 class="section-title">Nossos Serviços</h2>
+
+        <div class="grid-services">
+            <div class="card">
+                <h3>Infraestrutura de TI</h3>
+                <p>Projetos completos de redes, Wi-Fi, servidores, políticas de acesso, firewalls e monitoramento.</p>
+            </div>
+
+            <div class="card">
+                <h3>Suporte Técnico</h3>
+                <p>Atendimento remoto e presencial com ferramentas profissionais de suporte, inventário e automação.</p>
+            </div>
+
+            <div class="card">
+                <h3>Segurança da Informação</h3>
+                <p>Proteção avançada com firewall, controle de acesso, VPN site-to-site e soluções corporativas.</p>
             </div>
         </div>
-    </section>
-    <section id="sobre" class="section">
-        <div class="container">
-            <h2>Quem somos</h2>
-            <p>A <strong>S&amp;M Consultoria em TI</strong> é uma empresa especializada em suporte e infraestrutura de tecnologia para pequenas e médias empresas. Nossa atuação é focada em organização, padronização e segurança dos ambientes de TI, sempre buscando equilíbrio entre custo, desempenho e continuidade do negócio.</p>
-            <p>Com experiência em atendimento a escritórios, indústrias, comércios e prestadoras de serviço, trabalhamos lado a lado com nossos clientes para:</p>
-            <ul>
-                <li>Reduzir falhas e paradas inesperadas</li>
-                <li>Aumentar a vida útil dos equipamentos</li>
-                <li>Melhorar a experiência dos usuários com tecnologia</li>
-                <li>Deixar o ambiente de TI documentado e previsível</li>
-            </ul>
-            <p>Nosso compromisso é evoluir junto com o cliente, respeitando o que já funciona e trazendo melhorias de forma estruturada, sem mudanças bruscas desnecessárias.</p>
+    </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="section light">
+    <div class="container about-container">
+        <div class="about-img">
+            <img src="img/logo-vertical-alt.png" alt="Logotipo vertical S&M">
         </div>
-    </section>
-    <section id="servicos" class="section">
-        <div class="container">
-            <h2>Serviços</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <h3>Suporte Técnico e Help Desk</h3>
-                    <ul>
-                        <li>Atendimento remoto e presencial para resolver problemas do dia a dia dos usuários</li>
-                        <li>Erros em sistemas e aplicativos</li>
-                        <li>Problemas de impressão, rede e acesso</li>
-                        <li>Ajustes em configurações de e-mail e contas de usuário</li>
-                        <li>Orientação de uso e boas práticas</li>
-                    </ul>
-                    <p>Trabalhamos com atendimento organizado por chamados, registros e histórico, facilitando o acompanhamento e a transparência para a empresa.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Infraestrutura de Redes</h3>
-                    <ul>
-                        <li>Planejamento, implantação e manutenção de redes corporativas</li>
-                        <li>Estruturação de redes cabeadas e Wi-Fi</li>
-                        <li>Organização lógica de IPs e segmentos de rede</li>
-                        <li>Separação de redes para visitantes, equipe interna e dispositivos específicos</li>
-                        <li>Roteadores, switches e firewalls configurados de forma segura</li>
-                    </ul>
-                    <p>Nosso foco é manter a rede estável, segura e preparada para crescimento futuro.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Servidores e Ambientes Críticos</h3>
-                    <ul>
-                        <li>Análise, implantação e manutenção de servidores físicos e virtuais</li>
-                        <li>Servidores de arquivos e permissões</li>
-                        <li>Servidores de aplicação e sistemas internos</li>
-                        <li>Organização de acessos por usuário e setor</li>
-                        <li>Documentação das configurações principais</li>
-                    </ul>
-                    <p>Priorizamos soluções que façam sentido para o porte da empresa e para a realidade dos usuários, evitando complexidade desnecessária.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Monitoramento e Gestão Proativa</h3>
-                    <ul>
-                        <li>Acompanhamento contínuo dos principais pontos da infraestrutura</li>
-                        <li>Monitoramento de disponibilidade de servidores e equipamentos</li>
-                        <li>Alertas antecipados de falhas e problemas</li>
-                        <li>Atualizações planejadas</li>
-                        <li>Relatórios técnicos sobre a saúde do ambiente</li>
-                    </ul>
-                    <p>A ideia é agir antes que o problema interrompa o trabalho da equipe.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Backup e Recuperação</h3>
-                    <ul>
-                        <li>Estruturação de rotinas de backup para proteger dados importantes</li>
-                        <li>Definição do que precisa ser copiado e com qual frequência</li>
-                        <li>Backup local e/ou em nuvem</li>
-                        <li>Testes de recuperação pontuais</li>
-                        <li>Organização de rotinas com foco em segurança e rastreabilidade</li>
-                    </ul>
-                    <p>Backup só é backup quando é testado e documentado.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Consultoria e Organização de TI</h3>
-                    <ul>
-                        <li>Atuação estratégica em conjunto com a gestão da empresa</li>
-                        <li>Diagnóstico do ambiente atual de TI</li>
-                        <li>Planejamento de melhorias por etapas</li>
-                        <li>Acompanhamento de fornecedores de hardware, software e links de internet</li>
-                        <li>Padrões de uso e recomendações para o time interno</li>
-                    </ul>
-                    <p>O objetivo é transformar o ambiente de TI em algo previsível, controlado e alinhado ao negócio.</p>
-                </div>
-            </div>
+
+        <div class="about-text">
+            <h2>Quem Somos</h2>
+            <p>A S&M Consultoria em TI oferece suporte especializado, soluções de infraestrutura corporativa, sistemas de monitoramento, redes, servidores, VPN, segurança e acompanhamento técnico para pequenas e grandes empresas.</p>
+            <p>Com foco em resultados, transparência e qualidade, entregamos tecnologia que funciona.</p>
         </div>
-    </section>
-    <section id="como-trabalhamos" class="section section-alternate">
-        <div class="container">
-            <h2>Como é o nosso jeito de trabalhar</h2>
-            <ol class="steps">
-                <li><strong>Levantamento do cenário atual:</strong> entendemos como sua estrutura de TI está hoje, quais são as principais dores e o que já funciona bem.</li>
-                <li><strong>Plano de ação por etapas:</strong> organizamos as melhorias em etapas, priorizando o que impacta diretamente a operação e a segurança.</li>
-                <li><strong>Execução com o mínimo de impacto:</strong> planejamos as mudanças para afetar o mínimo possível a rotina dos usuários.</li>
-                <li><strong>Documentação e orientação:</strong> tudo o que for implantado é documentado e explicado de forma clara para a empresa.</li>
-                <li><strong>Acompanhamento contínuo:</strong> seguimos ajustando e melhorando conforme o ambiente evolui.</li>
-            </ol>
+    </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="section">
+    <div class="container">
+        <h2 class="section-title">Entre em Contato</h2>
+
+        <div class="contact-box">
+            <p><strong>E-mail:</strong> contato@smconsultoriati.com.br</p>
+            <p><strong>WhatsApp:</strong> (64) XXXXX-XXXX</p>
+            <p><strong>Endereço:</strong> Catalão - GO</p>
         </div>
-    </section>
-    <section id="diferenciais" class="section">
-        <div class="container">
-            <h2>Diferenciais</h2>
-            <ul class="features">
-                <li>Atendimento próximo, direto e transparente</li>
-                <li>Linguagem técnica traduzida para o dia a dia da gestão</li>
-                <li>Foco em estabilidade antes de novidades desnecessárias</li>
-                <li>Planejamento de longo prazo, respeitando investimentos já feitos</li>
-                <li>Uso de ferramentas modernas de suporte, monitoramento e documentação</li>
-                <li>Visão prática: o que importa é o resultado para o negócio, não apenas a tecnologia em si</li>
-            </ul>
+    </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+    <div class="container footer-container">
+        <img src="img/logo.png" class="footer-logo" alt="S&M Logo">
+        <p>© 2025 S&M Consultoria em TI — Todos os direitos reservados.</p>
+        <div class="footer-links">
+            <a href="privacidade.html">Política de Privacidade</a>
+            <a href="termos.html">Termos de Uso</a>
         </div>
-    </section>
-    <section id="segmentos" class="section section-alternate">
-        <div class="container">
-            <h2>Segmentos Atendidos</h2>
-            <p>A S&M Consultoria em TI atende empresas que precisam de organização e previsibilidade na área de tecnologia, como:</p>
-            <ul>
-                <li>Escritórios e prestadoras de serviço</li>
-                <li>Indústrias</li>
-                <li>Comércios</li>
-                <li>Empresas de engenharia, construção e incorporação</li>
-                <li>Empresas da área contábil, financeira e administrativa</li>
-            </ul>
-            <p>Mesmo que sua empresa não se encaixe exatamente nessas categorias, se você precisa estruturar melhor a TI, podemos conversar.</p>
-        </div>
-    </section>
-    <section id="faq" class="section">
-        <div class="container">
-            <h2>Perguntas Frequentes (FAQ)</h2>
-            <div class="faq-item">
-                <details>
-                    <summary>A S&M atende pessoa física?</summary>
-                    <p>Nosso foco são empresas. Atendemos pessoa física apenas em casos muito específicos e mediante análise prévia.</p>
-                </details>
-            </div>
-            <div class="faq-item">
-                <details>
-                    <summary>O atendimento é apenas presencial?</summary>
-                    <p>Não. A maior parte dos atendimentos é feita de forma remota, e quando necessário realizamos visitas presenciais agendadas.</p>
-                </details>
-            </div>
-            <div class="faq-item">
-                <details>
-                    <summary>Vocês atendem empresas de outras cidades?</summary>
-                    <p>Sim. O suporte remoto e o acompanhamento da infraestrutura podem ser feitos à distância. Em casos específicos avaliamos deslocamento para implantação inicial.</p>
-                </details>
-            </div>
-            <div class="faq-item">
-                <details>
-                    <summary>Posso falar com a S&M pelo WhatsApp?</summary>
-                    <p>Sim. Utilizamos WhatsApp Business para comunicação com empresas, sempre seguindo as diretrizes oficiais de privacidade e uso responsável das informações.</p>
-                </details>
-            </div>
-        </div>
-    </section>
-    <section id="contato" class="section section-alternate">
-        <div class="container">
-            <h2>Contato</h2>
-            <p>Se a sua empresa precisa organizar a área de TI, reduzir falhas e ter um ambiente mais estável, fale com a gente. Vamos entender sua realidade e propor o que fizer sentido para o momento atual.</p>
-            <form name="contato" method="POST" data-netlify="true" class="contact-form">
-                <input type="hidden" name="form-name" value="contato">
-                <div class="form-group">
-                    <label for="nome">Seu nome completo</label>
-                    <input type="text" id="nome" name="nome" required>
-                </div>
-                <div class="form-group">
-                    <label for="empresa">Nome da empresa</label>
-                    <input type="text" id="empresa" name="empresa">
-                </div>
-                <div class="form-group">
-                    <label for="email">Seu melhor e-mail para contato</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="telefone">DDD + número (Telefone / WhatsApp)</label>
-                    <input type="tel" id="telefone" name="telefone">
-                </div>
-                <div class="form-group">
-                    <label for="mensagem">Conte, em poucas palavras, qual é a situação atual de TI da sua empresa</label>
-                    <textarea id="mensagem" name="mensagem" rows="5"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Enviar mensagem</button>
-            </form>
-            <div class="contact-info">
-                <p><strong>S&M Consultoria em TI</strong><br>
-                CNPJ: 44.528.954/0001-47<br>
-                Cidade/UF: Catalão – GO<br>
-                E-mail: contato@smconsultoriati.com.br<br>
-                WhatsApp: +55 (62) 3602-8559</p>
-            </div>
-        </div>
-    </section>
-    <footer class="footer">
-        <div class="container">
-            <p><strong>S&M Consultoria em TI</strong> · CNPJ: 44.528.954/0001-47 – Catalão - GO<br>
-            E-mail: contato@smconsultoriati.com.br · WhatsApp: +55 (62) 3602-8559 </p>
-            <p>&copy; <span id="year"></span> S&M Consultoria em TI – Todos os direitos reservados.<br>
-            <a href="privacidade.html">Política de Privacidade</a> · <a href="termos.html">Termos de Uso</a></p>
-        </div>
-    </footer>
+    </div>
+</footer>
+
 </body>
 </html>
