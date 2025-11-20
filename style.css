@@ -289,6 +289,28 @@ img {
     box-shadow: 0 6px 20px var(--card-shadow);
 }
 
+/* Contact information box */
+.contact-info {
+    margin-top: 40px;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
+.contact-info p {
+    margin-bottom: 8px;
+}
+
+.contact-info a {
+    color: var(--primary-dark);
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
 .form-group {
     margin-bottom: 20px;
 }
