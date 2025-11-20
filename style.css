@@ -65,6 +65,18 @@ img {
     height: 48px;
 }
 
+/* --- Ajuste para o logo no menu ter fundo escuro constante --- */
+.logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 8px;
+    border-radius: 8px;
+    /* Fundo escuro para destacar a logo mesmo em modo claro */
+    background-color: #1B1E22;
+}
+
+
 .nav {
     display: flex;
     align-items: center;
@@ -101,14 +113,57 @@ img {
 }
 
 /* =================== HERO =================== */
+/*
+ * Ajustes no hero:
+ * - Adiciona posição relativa para suporte a overlay
+ * - Aumenta o espaço mínimo da seção para 80vh
+ * - Garante alinhamento centralizado
+ * - Define cor do texto clara
+ */
 .hero {
+    position: relative;
     padding-top: 120px;
     padding-bottom: 100px;
-    min-height: 75vh;
+    min-height: 80vh;
     display: flex;
     align-items: center;
+    justify-content: center;
     background: linear-gradient(90deg, var(--primary-dark) 0%, var(--primary-color) 100%);
     color: #FFFFFF;
+    text-align: center;
+}
+
+/* Overlay escuro para aumentar contraste do texto, conforme boas práticas */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.35);
+    z-index: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-text h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 24px;
+}
+
+.hero-text p {
+    font-size: 1.25rem;
+    margin-bottom: 36px;
+    max-width: 650px;
 }
 
 .hero-content {
@@ -119,8 +174,10 @@ img {
 }
 
 .hero-text {
-    flex: 1 1 50%;
-    max-width: 550px;
+    /* Removemos a base flex para permitir alinhamento central em coluna */
+    flex: none;
+    max-width: 650px;
+    width: 100%;
 }
 
 .hero-text h1 {

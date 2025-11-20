@@ -1,47 +1,114 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Termos de Uso - S&amp;M Consultoria em TI</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- Folha de estilos principal -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Ícone do site -->
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <!-- Google Fonts para consistência de tipografia -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <!-- Script de animações e alternância de tema -->
+    <script defer src="script.js"></script>
 </head>
 <body>
-<section class="section light">
-    <div class="container">
-        <h1>Termos de Uso</h1>
-        <p><strong>Última atualização:</strong> 20/11/2025</p>
-        <p>Os presentes Termos de Uso disciplinam a utilização do site <strong>smconsultoriati.com.br</strong> e do nosso serviço de suporte. Ao acessar ou utilizar nosso site e serviços, você concorda com estes termos e se responsabiliza pelo uso correto das informações e recursos disponibilizados.</p>
+    <!-- Cabeçalho replicado do site principal -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html#home" class="logo">
+                <img src="img/logo.png" alt="S&amp;M Consultoria em TI" class="logo-img" />
+            </a>
+            <nav class="nav">
+                <a href="index.html#home">Início</a>
+                <a href="index.html#services">Serviços</a>
+                <a href="index.html#why">Por que a S&amp;M?</a>
+                <a href="index.html#contact" class="btn-primary nav-btn">Contato</a>
+                <button id="theme-toggle" aria-label="Alternar tema" class="theme-toggle">🌙</button>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Conteúdo principal -->
+    <section class="section light">
+        <div class="container">
+            <h1>Termos de Uso</h1>
+            <p><strong>Última atualização:</strong> 20/11/2025</p>
+            <p>Os presentes Termos de Uso disciplinam a utilização do site <strong>smconsultoriati.com.br</strong> e do nosso serviço de suporte. Ao acessar ou utilizar nosso site e serviços, você concorda com estes termos e se responsabiliza pelo uso correto das informações e recursos disponibilizados.</p>
 
-        <h2>1.&nbsp;Objetivo</h2>
-        <p>O site da S&amp;M Consultoria em TI tem por finalidade apresentar informações institucionais, descrever nossos serviços e oferecer canais de contato e suporte para empresas que necessitam de consultoria em tecnologia da informação.</p>
+            <h2>1.&nbsp;Objetivo</h2>
+            <p>O site da S&amp;M Consultoria em TI tem por finalidade apresentar informações institucionais, descrever nossos serviços e oferecer canais de contato e suporte para empresas que necessitam de consultoria em tecnologia da informação.</p>
 
-        <h2>2.&nbsp;Uso Permitido</h2>
-        <p>O conteúdo deste site, incluindo textos, imagens, logos e materiais técnicos, é destinado exclusivamente a fins informativos e institucionais. É proibida a reprodução, distribuição ou modificação sem autorização prévia e escrita da S&amp;M. O uso do nosso serviço de suporte se restringe à abertura e ao acompanhamento de chamados técnicos e dúvidas relacionadas aos nossos serviços.</p>
+            <h2>2.&nbsp;Uso Permitido</h2>
+            <p>O conteúdo deste site, incluindo textos, imagens, logos e materiais técnicos, é destinado exclusivamente a fins informativos e institucionais. É proibida a reprodução, distribuição ou modificação sem autorização prévia e escrita da S&amp;M. O uso do nosso serviço de suporte se restringe à abertura e ao acompanhamento de chamados técnicos e dúvidas relacionadas aos nossos serviços.</p>
 
-        <h2>3.&nbsp;Responsabilidades</h2>
-        <p>A S&amp;M emprega seus melhores esforços para garantir que as informações do site sejam precisas e atualizadas, mas não garante a ausência de erros ou interrupções. Não nos responsabilizamos por danos ou prejuízos decorrentes do uso indevido das informações aqui contidas ou por indisponibilidades temporárias do site ou do portal de suporte.</p>
+            <h2>3.&nbsp;Responsabilidades</h2>
+            <p>A S&amp;M emprega seus melhores esforços para garantir que as informações do site sejam precisas e atualizadas, mas não garante a ausência de erros ou interrupções. Não nos responsabilizamos por danos ou prejuízos decorrentes do uso indevido das informações aqui contidas ou por indisponibilidades temporárias do site ou do portal de suporte.</p>
 
-        <h2>4.&nbsp;Links Externos</h2>
-        <p>Este site pode conter links para sites de terceiros, inclusive para o portal de suporte TomTicket. Não nos responsabilizamos pelo conteúdo, políticas de privacidade ou práticas desses sites. Recomendamos a leitura atenta das políticas de cada serviço ao acessá‑los.</p>
+            <h2>4.&nbsp;Links Externos</h2>
+            <p>Este site pode conter links para sites de terceiros, inclusive para o portal de suporte TomTicket. Não nos responsabilizamos pelo conteúdo, políticas de privacidade ou práticas desses sites. Recomendamos a leitura atenta das políticas de cada serviço ao acessá‑los.</p>
 
-        <h2>5.&nbsp;Propriedade Intelectual</h2>
-        <p>Todos os elementos deste site (marcas, logotipos, textos, design, layout) pertencem à S&amp;M Consultoria em TI ou são utilizados sob licença e estão protegidos pela legislação de direitos autorais e de propriedade intelectual.</p>
+            <h2>5.&nbsp;Propriedade Intelectual</h2>
+            <p>Todos os elementos deste site (marcas, logotipos, textos, design, layout) pertencem à S&amp;M Consultoria em TI ou são utilizados sob licença e estão protegidos pela legislação de direitos autorais e de propriedade intelectual.</p>
 
-        <h2>6.&nbsp;Privacidade e Proteção de Dados</h2>
-        <p>O uso deste site implica a leitura e a concordância com nossa Política de Privacidade, disponível no link correspondente. Tratamos seus dados pessoais de acordo com a LGPD e utilizamos a plataforma TomTicket para a gestão e o acompanhamento de chamados de suporte técnico. Os dados fornecidos são utilizados exclusivamente para fins de atendimento e consultoria.</p>
+            <h2>6.&nbsp;Privacidade e Proteção de Dados</h2>
+            <p>O uso deste site implica a leitura e a concordância com nossa Política de Privacidade, disponível no link correspondente. Tratamos seus dados pessoais de acordo com a LGPD e utilizamos a plataforma TomTicket para a gestão e o acompanhamento de chamados de suporte técnico. Os dados fornecidos são utilizados exclusivamente para fins de atendimento e consultoria.</p>
 
-        <h2>7.&nbsp;Alterações dos Termos</h2>
-        <p>A S&amp;M poderá atualizar estes Termos de Uso periodicamente. A data da última atualização será sempre informada no início do documento. Recomendamos a consulta regular deste texto para verificar eventuais mudanças.</p>
+            <h2>7.&nbsp;Alterações dos Termos</h2>
+            <p>A S&amp;M poderá atualizar estes Termos de Uso periodicamente. A data da última atualização será sempre informada no início do documento. Recomendamos a consulta regular deste texto para verificar eventuais mudanças.</p>
 
-        <h2>8.&nbsp;Contato</h2>
-        <p>Para esclarecer quaisquer dúvidas sobre estes Termos de Uso, utilize nossos canais oficiais:</p>
-        <p><strong>Help&nbsp;Desk:</strong> <a href="https://smconsultoriati.tomticket.com?account=4485952P29092025082411">Acessar Help&nbsp;Desk</a></p>
-        <p><strong>E‑mail:</strong> <a href="mailto:contato@smconsultoriati.com.br">contato@smconsultoriati.com.br</a></p>
+            <h2>8.&nbsp;Contato</h2>
+            <p>Para esclarecer quaisquer dúvidas sobre estes Termos de Uso, utilize nossos canais oficiais:</p>
+            <p><strong>Help&nbsp;Desk:</strong> <a href="https://suporte.smconsultoriati.com.br/">Acessar Help&nbsp;Desk</a></p>
+            <p><strong>E‑mail:</strong> <a href="mailto:contato@smconsultoriati.com.br">contato@smconsultoriati.com.br</a></p>
 
-        <br />
-        <a href="index.html" class="btn-primary">Voltar ao site</a>
-    </div>
-</section>
+            <br />
+            <a href="index.html" class="btn-primary">Voltar ao site</a>
+        </div>
+    </section>
+    
+    <!-- Rodapé replicado do site principal -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-logo-container">
+                <img src="img/logo-footer.png" class="footer-logo" alt="Logo S&amp;M Consultoria em TI" />
+            </div>
+            <div class="footer-info">
+                <p>S&amp;M Consultoria em TI © 2025 — Todos os direitos reservados.</p>
+            </div>
+            <div class="footer-links">
+                <a href="privacidade.html">Política de Privacidade</a>
+                <a href="termos.html">Termos de Uso</a>
+            </div>
+            <div class="footer-social-links">
+                <a href="https://www.facebook.com/smconsultoriati" title="Facebook" target="_blank" rel="noopener">
+                    <img src="img/facebook.png" alt="Facebook" style="width:32px; height:32px;" />
+                </a>
+                <a href="https://wa.me/+556236028559?text=Ol%C3%A1%2C" title="WhatsApp" target="_blank" rel="noopener">
+                    <img src="img/whatsapp.png" alt="WhatsApp" style="width:32px; height:32px;" />
+                </a>
+                <a href="https://www.instagram.com/smconsultoriati" title="Instagram" target="_blank" rel="noopener">
+                    <img src="img/instagram.png" alt="Instagram" style="width:32px; height:32px;" />
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Script para atendimento online (TomTicket) -->
+    <script type="text/javascript">
+    //<![CDATA[
+    var ttChatLoaderS = document.createElement('script');
+    document.tomticketChatLoaderScriptVersion = 2;
+    ttChatLoaderS.src = 'https://smconsultoriati.tomticket.com/scripts-chat/chat.min.js'
+        + '?id=EP70093'
+        + '&autoOpen=0'
+        + '&hideWhenOffline=0'
+        + '&d=smconsultoriati'
+        + '&ts=' + new Date().getTime()
+        + '&ref=' + encodeURIComponent(document.URL);
+    document.body.appendChild(ttChatLoaderS);
+    //]]>
+    </script>
 </body>
 </html>
