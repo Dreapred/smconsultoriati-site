@@ -469,7 +469,7 @@ body.dark-mode .form-group textarea {
 }
 
 .footer-logo {
-    height: 70px;
+    height: 100px; /* adjusted from 70px to 100px for better visibility */
     width: auto;
 }
 
