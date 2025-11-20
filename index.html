@@ -5,11 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>S&M Consultoria em TI</title>
 
-    <link rel="icon" type="image/png" href="img/favicon.png">
+    <!-- SEO meta tags -->
+    <meta name="description" content="S&M Consultoria em TI: infraestrutura, suporte técnico, segurança, redes, servidores, VPN, firewall e monitoramento corporativo." />
+    <meta property="og:title" content="S&M Consultoria em TI" />
+    <meta property="og:description" content="Soluções profissionais em tecnologia para empresas: redes, servidores, segurança, VPN e muito mais." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="img/logo.png" />
+    <meta property="og:url" content="https://www.smconsultoriati.com.br" />
+
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <!-- Styles -->
     <link rel="stylesheet" href="style.css" />
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- Scripts -->
+    <script defer src="script.js"></script>
 </head>
 
 <body>
@@ -18,29 +30,30 @@
 <header class="header">
     <div class="container header-container">
         <a href="#home" class="logo">
-            <img src="img/logo.png" alt="S&M Consultoria em TI" class="logo-img">
+            <img src="img/logo.png" alt="S&M Consultoria em TI" class="logo-img" />
         </a>
-
         <nav class="nav">
             <a href="#home">Início</a>
             <a href="#services">Serviços</a>
-            <a href="#about">Sobre Nós</a>
+            <a href="#why">Por que a S&M?</a>
+            <a href="#clients">Clientes</a>
             <a href="#contact" class="btn-primary nav-btn">Contato</a>
+            <!-- Dark mode toggle -->
+            <button id="theme-toggle" aria-label="Alternar tema" class="theme-toggle">🌙</button>
         </nav>
     </div>
 </header>
 
 <!-- ================= HERO ================= -->
 <section id="home" class="hero">
-    <div class="container hero-content">
+    <div class="container hero-content" data-animate>
         <div class="hero-text">
-            <h1>Soluções Profissionais em Tecnologia</h1>
-            <p>Gerenciamento de infraestrutura, consultoria especializada, segurança, redes, servidores e suporte para empresas que buscam tecnologia com confiabilidade.</p>
-            <a href="#contact" class="btn-primary hero-btn">Fale com a gente</a>
+            <h1>Transformamos Tecnologia em Resultado</h1>
+            <p>Consultoria, suporte e infraestrutura de TI para empresas que buscam alta disponibilidade, segurança e performance.</p>
+            <a href="#contact" class="btn-primary hero-btn">Entrar em Contato</a>
         </div>
-
         <div class="hero-img">
-            <img src="img/logo-vertical.png" alt="Logo vertical S&M Consultoria em TI">
+            <img src="img/logo-vertical.png" alt="Logo vertical S&M Consultoria em TI" />
         </div>
     </div>
 </section>
@@ -48,60 +61,148 @@
 <!-- ================= SERVICES ================= -->
 <section id="services" class="section">
     <div class="container">
-        <h2 class="section-title">Nossos Serviços</h2>
-
+        <h2 class="section-title" data-animate>Serviços</h2>
         <div class="grid-services">
-            <div class="card">
-                <h3>Infraestrutura de TI</h3>
-                <p>Projetos completos de redes, Wi-Fi, servidores, políticas de acesso, firewalls e monitoramento.</p>
+            <div class="service-card" data-animate>
+                <div class="icon">
+                    <!-- Infrastructure SVG Icon -->
+                    <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h18v6H3z"/><path d="M3 15h18v6H3z"/><path d="M3 3v18"/><path d="M21 3v18"/><path d="M7.5 9v6"/><path d="M16.5 9v6"/></svg>
+                </div>
+                <h3>Infraestrutura</h3>
+                <p>Redes cabeadas e Wi-Fi, servidores físicos e virtuais, VPN, firewall, zero trust e conectividade de ponta.</p>
             </div>
-
-            <div class="card">
+            <div class="service-card" data-animate>
+                <div class="icon">
+                    <!-- Support SVG Icon -->
+                    <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 9v3c0 1.103.897 2 2 2h2c1.103 0 2-.897 2-2V9"/><path d="M4 4h16v16H4z"/><path d="M9 4v5"/><path d="M15 4v5"/></svg>
+                </div>
                 <h3>Suporte Técnico</h3>
-                <p>Atendimento remoto e presencial com ferramentas profissionais de suporte, inventário e automação.</p>
+                <p>Atendimento remoto e presencial, help desk, automação de suporte e inventário, visando resolver problemas rapidamente.</p>
             </div>
-
-            <div class="card">
-                <h3>Segurança da Informação</h3>
-                <p>Proteção avançada com firewall, controle de acesso, VPN site-to-site e soluções corporativas.</p>
+            <div class="service-card" data-animate>
+                <div class="icon">
+                    <!-- Security SVG Icon -->
+                    <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l7 4v6c0 5-3.5 9.74-7 10-3.5-.26-7-5-7-10V6l7-4z"/><circle cx="12" cy="12" r="3"/></svg>
+                </div>
+                <h3>Segurança</h3>
+                <p>Proteção avançada com firewall, antivírus, controle de acessos, políticas de senha e autenticação multifator.</p>
+            </div>
+            <div class="service-card" data-animate>
+                <div class="icon">
+                    <!-- Networks SVG Icon -->
+                    <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="M4.93 4.93l1.41 1.41"/><path d="M17.66 17.66l1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="M4.93 19.07l1.41-1.41"/><path d="M17.66 6.34l1.41-1.41"/></svg>
+                </div>
+                <h3>Redes e Conectividade</h3>
+                <p>Implementação e manutenção de redes corporativas, segmentação de VLANs e balanceamento de links.</p>
+            </div>
+            <div class="service-card" data-animate>
+                <div class="icon">
+                    <!-- VPN/Firewall SVG Icon -->
+                    <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><path d="M3 11l4.5-4.5M3 18l4.5-4.5M14 3l4.5 4.5M14 10l4.5 4.5"/></svg>
+                </div>
+                <h3>VPN & Firewall</h3>
+                <p>Túneis criptografados site-to-site, políticas de segurança, filtragem de conteúdo e monitoramento em tempo real.</p>
+            </div>
+            <div class="service-card" data-animate>
+                <div class="icon">
+                    <!-- Monitoring SVG Icon -->
+                    <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19h16v2H4z"/><rect x="7" y="9" width="3" height="10"/><rect x="12" y="5" width="3" height="14"/><rect x="17" y="12" width="3" height="7"/></svg>
+                </div>
+                <h3>Monitoramento</h3>
+                <p>Ferramentas de monitoramento 24/7, alertas antecipados, automação de manutenção e relatórios gerenciais.</p>
             </div>
         </div>
     </div>
 </section>
 
-<!-- ================= ABOUT ================= -->
-<section id="about" class="section light">
-    <div class="container about-container">
-        <div class="about-img">
-            <img src="img/logo-vertical-alt.png" alt="Logotipo vertical S&M">
+<!-- ================= WHY CHOOSE S&M ================= -->
+<section id="why" class="section light">
+    <div class="container">
+        <h2 class="section-title" data-animate>Por que escolher a S&M?</h2>
+        <div class="grid-why">
+            <div class="why-item" data-animate>
+                <div class="why-icon">✔</div>
+                <p>Atendimento especializado e humanizado</p>
+            </div>
+            <div class="why-item" data-animate>
+                <div class="why-icon">✔</div>
+                <p>Suporte rápido e eficiente</p>
+            </div>
+            <div class="why-item" data-animate>
+                <div class="why-icon">✔</div>
+                <p>Expertise em redes corporativas e segurança</p>
+            </div>
+            <div class="why-item" data-animate>
+                <div class="why-icon">✔</div>
+                <p>Projetos personalizados para sua empresa</p>
+            </div>
+            <div class="why-item" data-animate>
+                <div class="why-icon">✔</div>
+                <p>Transparência total e comunicação clara</p>
+            </div>
+            <div class="why-item" data-animate>
+                <div class="why-icon">✔</div>
+                <p>Tecnologia com foco em resultados</p>
+            </div>
         </div>
+    </div>
+</section>
 
-        <div class="about-text">
-            <h2>Quem Somos</h2>
-            <p>A S&M Consultoria em TI oferece suporte especializado, soluções de infraestrutura corporativa, sistemas de monitoramento, redes, servidores, VPN, segurança e acompanhamento técnico para pequenas e grandes empresas.</p>
-            <p>Com foco em resultados, transparência e qualidade, entregamos tecnologia que funciona.</p>
+<!-- ================= CLIENTS ================= -->
+<section id="clients" class="section">
+    <div class="container">
+        <h2 class="section-title" data-animate>Clientes & Parceiros</h2>
+        <p class="subtitle" data-animate>Empresas que confiam na S&M</p>
+        <div class="grid-clients" data-animate>
+            <!-- Placeholder logos (substitua pelas logos reais) -->
+            <div class="client-item">Cliente A</div>
+            <div class="client-item">Cliente B</div>
+            <div class="client-item">Cliente C</div>
+            <div class="client-item">Cliente D</div>
         </div>
     </div>
 </section>
 
 <!-- ================= CONTACT ================= -->
-<section id="contact" class="section">
+<section id="contact" class="section light">
     <div class="container">
-        <h2 class="section-title">Entre em Contato</h2>
-
-        <div class="contact-box">
-            <p><strong>E-mail:</strong> contato@smconsultoriati.com.br</p>
-            <p><strong>WhatsApp:</strong> (64) XXXXX-XXXX</p>
-            <p><strong>Endereço:</strong> Catalão - GO</p>
-        </div>
+        <h2 class="section-title" data-animate>Entre em Contato</h2>
+        <form name="contato" method="POST" data-netlify="true" class="contact-form" data-animate>
+            <input type="hidden" name="form-name" value="contato" />
+            <div class="form-group">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" required />
+            </div>
+            <div class="form-group">
+                <label for="empresa">Empresa</label>
+                <input type="text" id="empresa" name="empresa" />
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+                <label for="telefone">Telefone / WhatsApp</label>
+                <input type="tel" id="telefone" name="telefone" />
+            </div>
+            <div class="form-group">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary">Enviar</button>
+        </form>
     </div>
 </section>
 
 <!-- ================= FOOTER ================= -->
 <footer class="footer">
     <div class="container footer-container">
-        <img src="img/logo.png" class="footer-logo" alt="S&M Logo">
-        <p>© 2025 S&M Consultoria em TI — Todos os direitos reservados.</p>
+        <div class="footer-logo-container">
+            <img src="img/logo.png" class="footer-logo" alt="S&M Logo" />
+        </div>
+        <div class="footer-info">
+            <p>S&M Consultoria em TI © 2025 — Todos os direitos reservados.</p>
+        </div>
         <div class="footer-links">
             <a href="privacidade.html">Política de Privacidade</a>
             <a href="termos.html">Termos de Uso</a>
