@@ -43,17 +43,12 @@ document.addEventListener('DOMContentLoaded', () => {
             header.classList.remove('shrink');
         }
 
-        // Parallax leve no hero (apenas desktop)
+        // Parallax leve no hero
         const hero = document.querySelector('.hero');
         if (hero) {
-            const isMobile = window.innerWidth <= 768;
-            if (!isMobile) {
-                const factor = 0.2;
-                const offset = currentY * factor;
-                hero.style.transform = `translateY(${(offset * -0.02).toFixed(2)}px)`;
-            } else {
-                hero.style.transform = 'none';
-            }
+            const factor = 0.2;
+            const offset = currentY * factor;
+            hero.style.transform = `translateY(${(offset * -0.02).toFixed(2)}px)`;
         }
 
         lastScrollY = currentY;
