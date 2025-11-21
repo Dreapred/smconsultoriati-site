@@ -45,6 +45,15 @@ img {
     margin: 0 auto;
 }
 
+/* Anchor offset so header fixed doesn't cobrir o título */
+#home,
+#services,
+#why,
+#contact {
+    scroll-margin-top: 100px;
+}
+
+
 /* =================== HEADER =================== */
 .header {
     position: fixed;
@@ -142,7 +151,7 @@ img {
 /* =================== HERO =================== */
 .hero {
     position: relative;
-    padding: 160px 0 100px;
+    padding: 140px 0 110px;
     min-height: 85vh;
     display: flex;
     align-items: center;
@@ -167,18 +176,7 @@ img {
     z-index: 1;
 }
 
-.hero {
-    position: relative;
-    padding-top: 120px;
-    padding-bottom: 100px;
-    min-height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(90deg, var(--primary-dark) 0%, var(--primary-color) 100%);
-    color: #FFFFFF;
-    text-align: center;
-}
+
 
 .hero-content {
     position: relative;
@@ -609,6 +607,7 @@ input[type="submit"]:hover {
     transform: translateY(40px);
     transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
                 transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition-delay: var(--delay, 0s);
 }
 
 [data-animate].in-view {
@@ -693,9 +692,36 @@ input[type="submit"]:hover {
 }
 
 @media (max-width: 480px) {
-    .hero-text h1 {
-        font-size: 2rem;
+    .hero {
+        padding: 100px 0 70px;
+        min-height: auto;
     }
+
+    .hero-text h1 {
+        font-size: 1.9rem;
+        line-height: 1.2;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+        max-width: 90%;
+        margin: 0 auto 24px;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .btn-primary,
+    .btn-secondary,
+    .nav-btn,
+    .hero-btn {
+        padding: 12px 22px !important;
+        font-size: 0.95rem !important;
+        line-height: 1.4 !important;
+        white-space: normal !important;
+    }
+}
 
     .hero-text p {
         font-size: 1rem;
