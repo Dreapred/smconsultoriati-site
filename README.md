@@ -1,124 +1,164 @@
-# S&M Consultoria em TI — Site Corporativo Premium
+# S&M Consultoria em TI — Site Institucional (Versão Atual)
 
-Site institucional completo e moderno para a S&M Consultoria em TI, com design corporativo premium e foco em conversão.
+Este repositório contém o código-fonte completo do site institucional da **S&M Consultoria em TI**, desenvolvido com foco em identidade visual corporativa, responsividade, animações modernas e integração com o sistema de atendimento TomTicket.
 
-## 🚀 Características Principais
-
-- **Design Corporativo Moderno**: Interface limpa e profissional com gradientes e efeitos visuais
-- **Totalmente Responsivo**: Adaptável a todos os dispositivos (desktop, tablet, mobile)
-- **Otimizado para SEO**: Meta tags estratégicas e estrutura semântica
-- **Animações Suaves**: Efeitos de scroll, parallax e hover elegantes
-- **Performance Otimizada**: Carregamento rápido e código eficiente
-- **Acessibilidade**: Navegação intuitiva e contraste adequado
-- **Conversão Otimizada**: CTAs claros e formulários integrados
-
-## 🎨 Aprimoramentos Implementados
-
-### Design e Experiência do Usuário
-- Header com efeito glassmorphism e blur para modernidade
-- Gradientes corporativos azuis profissionais
-- Cards com hover effects sofisticados e animações
-- Botões padronizados com efeitos de brilho e ripple
-- Tipografia hierárquica (Poppins para títulos, Inter para conteúdo)
-- Espaçamento generoso e layout limpo
-
-### Funcionalidades Técnicas
-- Menu fixo com shrink effect ao scroll
-- Sistema de animações em cascade no scroll
-- Parallax sutil na seção hero
-- Smooth scroll para navegação suave entre seções
-- Efeitos de hover interativos em todos os elementos
-- Integração completa com TomTicket (chat e formulários)
-
-### Conteúdo e Conversão
-- Textos mais atrativos e focados em benefícios
-- Destaque para resultados e valor para o negócio
-- CTAs claros, diretos e estrategicamente posicionados
-- Informações de contato sempre visíveis e acessíveis
-- Mensagens persuasivas que geram confiança
-
-## 📁 Estrutura de Arquivos
-
-sitem-sm-consultoria/
-├── index.html                 # Página principal
-├── privacidade.html           # Política de privacidade
-├── termos.html                # Termos de uso
-├── style.css                  # Estilos principais (CSS moderno)
-├── script.js                  # Funcionalidades JavaScript
-├── img/                       # Diretório de imagens
-│   ├── logo.png              # Logo principal
-│   ├── logo-footer.png       # Logo para rodapé
-│   ├── favicon.png           # Ícone do site
-│   ├── facebook.png          # Ícone Facebook
-│   ├── whatsapp.png          # Ícone WhatsApp
-│   └── instagram.png         # Ícone Instagram
-└── README.md                  # Este arquivo
-
-## 🛠 Tecnologias Utilizadas
-
-- **HTML5** Semântico com estrutura otimizada para SEO
-- **CSS3** com Variáveis CSS, Grid e Flexbox
-- **JavaScript Vanilla** (ES6+) sem dependências externas
-- **Google Fonts** (Inter + Poppins para hierarquia tipográfica)
-- **TomTicket** integrado para chat e gestão de tickets
-- **Design System** próprio com componentes reutilizáveis
-
-## 📱 Responsividade
-
-O site é totalmente responsivo e otimizado para:
-
-- **Desktop** (1200px+) - Layout completo com todos os elementos
-- **Tablet** (768px - 1199px) - Grids adaptáveis e menu otimizado
-- **Mobile** (320px - 767px) - Navegação simplificada e touch-friendly
-
-## 🎯 SEO e Acessibilidade
-
-- Meta tags estratégicas para descrição e palavras-chave
-- Estrutura semântica com headings hierárquicos
-- Alt texts descritivos em todas as imagens
-- Navegação por teclado totalmente funcional
-- Contraste de cores adequado (WCAG AA)
-- Links âncora com smooth scroll
-- Títulos otimizados para mecanismos de busca
-
-## 📞 Integrações e Canais
-
-- **TomTicket**: Sistema completo de chat online e formulários
-- **WhatsApp Business**: Link direto com mensagem pré-definida
-- **Redes Sociais**: Facebook, Instagram com links otimizados
-- **Email Corporativo**: Links mailto com assunto pré-definido
-- **Telefone**: Número de contato direto com DDD
-
-## 🔧 Personalização
-
-As cores e estilos podem ser facilmente modificadas através das variáveis CSS no início do arquivo style.css:
-
-:root {
-    --primary-color: #00ABFF;
-    --primary-dark: #0077CC;
-    --secondary-color: #475569;
-    /* Adicione mais variáveis conforme necessário */
-}
-
-## 🚀 Como Implementar
-
-1. **Hospedagem**: Upload dos arquivos para seu servidor web
-2. **Domínio**: Configure o domínio smconsultoriati.com.br
-3. **SSL**: Certificado HTTPS para segurança
-4. **TomTicket**: Mantenha as configurações atuais do chat
-5. **Analytics**: Adicione Google Analytics para métricas
-6. **Backup**: Configure backups regulares do site
-
-## 📊 Métricas Recomendadas
-
-- Taxa de conversão de formulários
-- Tempo de permanência nas páginas
-- Taxa de cliques nos CTAs
-- Origem do tráfego
-- Dispositivos mais utilizados
+Abaixo estão documentadas todas as estruturas, funcionalidades e decisões de design aplicadas até a versão atual.
 
 ---
 
-**S&M Consultoria em TI** - Transformando tecnologia em resultados tangíveis para empresas desde 2025.
+## ✅ Estrutura do Projeto
 
-*Precisa de suporte técnico? Entre em contato: comercial@smconsultoriati.com.br | (62) 3602-8559*
+```
+/
+├── index.html              # Página principal
+├── privacidade.html        # Política de Privacidade
+├── termos.html             # Termos de Uso
+├── style.css               # Estilos globais + tema corporativo
+├── script.js               # Animações, header shrink e parallax
+├── /img                    # Logos, ícones e imagens utilizadas
+└── README.md               # Este arquivo
+```
+
+---
+
+## 🎨 Identidade Visual
+
+O site segue um design corporativo premium, baseado em:
+
+* Paleta de cores da S&M
+* Fonte primária: **Inter**
+* Fonte de títulos: **Poppins**
+* Bordas arredondadas suaves (6–20px)
+* Componentes com sombras leves premium
+* Header fixo com comportamento *shrink*
+* Hero com gradiente institucional e overlay escuro
+
+---
+
+## ✨ Funcionalidades Principais
+
+### **1. Animações Modernas (IntersectionObserver)**
+
+* Fade + slide suave
+* Stagger automático por ordem dos elementos
+* Leve parallax no Hero
+
+### **2. Header Inteligente**
+
+* Fixa no topo
+* Reduz altura ao rolar (*shrink mode*)
+* Navegação com contraste otimizado para fundo escuro
+
+### **3. Seções Institucionais**
+
+* Hero com CTA principal: *Solicitar Proposta*
+* Serviços com ícones SVG otimizados
+* Por que escolher a S&M (seção de argumentos)
+* Contato com TomTicket + mensagem institucional
+* Rodapé corporativo com logo, links e redes sociais
+
+### **4. Integração com TomTicket**
+
+* Widget de chat incorporado em todas as páginas
+* Uso do parâmetro `account` para carregamento otimizado
+* Formulário de contato via iframe estilizado externamente para harmonizar com o design do site
+* Estrutura preparada para futura migração para API própria, se desejado
+
+---
+
+## 🧩 Estilização do Formulário (TomTicket)
+
+Como o formulário do TomTicket roda dentro de um iframe, ajustes diretos no CSS interno não são possíveis. Porém, toda a estrutura externa foi estilizada para integração visual:
+
+* Moldura com borda suave
+* Sombra premium alinhada ao restante do site
+* Altura mínima aumentada para boa legibilidade
+* Espaçamento e harmonização dentro da `.contact-box`
+
+Trechos como este garantem a integração:
+
+```css
+.contact-box iframe {
+    width: 100% !important;
+    min-height: 560px;
+    margin-top: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.06);
+}
+```
+
+---
+
+## 🖼️ Ícones e Imagens
+
+* Ícones oficiais das redes sociais
+* Logo em alta resolução
+* Logo do rodapé com plano de fundo escurecido para melhor leitura
+
+Todos os ícones sociais foram corrigidos para manter cores originais e hover premium.
+
+---
+
+## 🔧 Scripts Importantes
+
+### **TomTicket Chat Loader**
+
+Versão atual utilizada em todas as páginas:
+
+```html
+<script type="text/javascript">
+var ttChatLoaderS = document.createElement('script');
+document.tomticketChatLoaderScriptVersion = 2;
+ttChatLoaderS.src = 'https://smconsultoriati.tomticket.com/scripts-chat/chat.min.js'
+    + '?id=EP70093'
+    + '&account=4485952P29092025082411'
+    + '&autoOpen=0'
+    + '&hideWhenOffline=0'
+    + '&d=smconsultoriati'
+    + '&ts=' + new Date().getTime()
+    + '&ref=' + encodeURIComponent(document.URL);
+document.body.appendChild(ttChatLoaderS);
+</script>
+```
+
+---
+
+## 🚀 Melhorias Recentes
+
+* Ajustes finos no layout do Hero
+* Correção do contraste e filtro dos ícones sociais
+* Integração visual do iframe de contato
+* Padronização dos botões no estilo "Solicitar Proposta"
+* Correções no header claro/escuro
+* Revisão do carregamento TomTicket (inclusão de `account`)
+
+---
+
+## 📝 Próximos Passos Possíveis
+
+* Migrar formulário para integração própria via API TomTicket (form nativo)
+* Criar páginas adicionais (cases, clientes, SLA, etc.)
+* Otimizar imagens via WebP
+* Implementar lazy load para imagens pesadas
+
+---
+
+## 📌 Autor
+
+Desenvolvido por **Marciel (S&M Consultoria em TI)** com refinamentos visuais e técnicos realizados nesta versão.
+
+---
+
+## © Direitos Autorais e Licenciamento
+
+Este repositório contém o código do site institucional da **S&M Consultoria em TI**.
+
+Todo o conteúdo — incluindo design, layout, identidade visual, CSS, imagens, ícones, animações e demais elementos — é de propriedade exclusiva da S&M Consultoria em TI.
+
+**Não é permitida a reprodução, redistribuição, modificação ou uso comercial deste conteúdo sem autorização prévia por escrito.**
+
+O repositório está público apenas para fins de deploy (Netlify, CI/CD ou hospedagem estática). Qualquer uso não autorizado poderá resultar em ação legal conforme legislação vigente.
+
+Se quiser, posso gerar também uma versão em inglês, ou uma versão mais técnica voltada para desenvolvedores. Basta pedir!
