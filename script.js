@@ -28,13 +28,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // ================= HEADER SHRINK E PARALLAX =================
     const header = document.querySelector('.header');
+    const root = document.documentElement;
     let lastScrollY = window.scrollY;
     let ticking = false;
 
+    const updateLayoutOffsets = () => {
+        if (!header) return;
+
+        const headerHeight = header.offsetHeight;
+        root.style.setProperty('--header-height', `${headerHeight}px`);
+    };
+
     const updateHeader = () => {
         const currentY = window.scrollY;
-        
+
         if (!header) return;
+
+        updateLayoutOffsets();
 
         // Header shrink
         if (currentY > 60) {
@@ -68,8 +78,9 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     window.addEventListener('scroll', onScroll, { passive: true });
-    
+
     // Executar uma vez para estado inicial
+    updateLayoutOffsets();
     updateHeader();
 
     // ================= SMOOTH SCROLL PARA LINKS ÂNCORA =================
@@ -99,7 +110,8 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('resize', () => {
         clearTimeout(resizeTimeout);
         resizeTimeout = setTimeout(() => {
-            // Recálculos necessários no resize
+            updateLayoutOffsets();
+            updateHeader();
         }, 250);
     });
 

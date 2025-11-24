@@ -13,6 +13,7 @@
     --hover-shadow: rgba(0, 0, 0, 0.12);
     --gradient-primary: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-color) 100%);
     --gradient-hero: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-color) 50%, var(--primary-light) 100%);
+    --header-height: 96px;
 }
 
 /* =================== RESET =================== */
@@ -50,7 +51,7 @@ img {
 #services,
 #why,
 #contact {
-    scroll-margin-top: 100px;
+    scroll-margin-top: calc(var(--header-height, 100px) + 20px);
 }
 
 
@@ -151,7 +152,7 @@ img {
 /* =================== HERO =================== */
 .hero {
     position: relative;
-    padding: 150px 0 110px;
+    padding: calc(var(--header-height, 100px) + 90px) 0 110px;
     min-height: 85vh;
     display: flex;
     align-items: center;
@@ -693,7 +694,7 @@ input[type="submit"]:hover {
     }
 
     .hero {
-        padding: 160px 0 90px;
+        padding: calc(var(--header-height, 100px) + 70px) 0 90px;
         min-height: 70vh;
     }
 
@@ -803,7 +804,7 @@ input[type="submit"]:hover {
 
 @media (max-width: 480px) {
     .hero {
-        padding: 170px 0 90px;
+        padding: calc(var(--header-height, 100px) + 80px) 0 90px;
         min-height: auto;
     }
 
