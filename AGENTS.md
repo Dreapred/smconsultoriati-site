@@ -26,6 +26,9 @@ Manter consistência visual, técnica e operacional em todo o código do site, g
 * Cinza suave: `#ABB4C2`
 * Branco: `#FFFFFF`
 
+### **Auditoria de Cores — Obrigatória**
+Sempre que editar estilos ou elementos visuais, valide que todas as cores pertencem à paleta oficial acima. Qualquer cor fora dessa paleta deve ser substituída automaticamente, inclusive sombras que devem respeitar a configuração premium: `rgba(0,0,0,0.08)`.
+
 ### **Sombra padrão:**
 
 ```
@@ -43,6 +46,17 @@ box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
 * Sempre alinhar elementos centrais ao centro.
 * Evitar espaçamentos grandes demais acima do header.
 * Garantir responsividade em todos os breakpoints (min 360px).
+
+### **Padrões Estruturais**
+- Todos os formulários devem ficar dentro de um único container principal, sem caixas duplicadas ou sombras repetidas.
+- Todos os rodapés devem ser idênticos entre si.
+- Não adicionar elementos novos em páginas já prontas sem solicitação explícita.
+- Sempre seguir os textos, espaçamentos e hierarquias aprovados.
+
+### **Boas Práticas de UX**
+- Itens informativos (como horário de atendimento) devem ir no rodapé, nunca no menu, Hero ou CTA.
+- Informações de horário devem aparecer também no chat offline, mas não no chat online.
+- Toda mensagem deve ser escrita com clareza, profissionalismo e sem exageros.
 
 ---
 
@@ -98,6 +112,10 @@ padding: 10px 14px;
 * Respeitar hierarquia: título → subtítulo → conteúdo.
 * Elementos importantes devem vir antes da dobra em mobile.
 
+### **Hero — Informações Proibidas**
+- Não inserir textos como “24/7”, “atendimento contínuo”, “suporte 24 horas” ou qualquer variação disso.
+- A S&M não opera 24/7; portanto, essas informações são proibidas no Hero e em qualquer parte do site.
+
 ---
 
 ## 📂 Estrutura Recomendada para Ajustes
@@ -109,6 +127,12 @@ Sempre verificar se:
 3. As cores seguem a paleta oficial.
 4. O comportamento em mobile reproduz fielmente a versão premium.
 5. Links e CTA seguem o estilo do site.
+
+## 🔖 Rodapé — Diretriz Oficial
+- O rodapé deve ser idêntico em todas as páginas: Home, Contato, Termos e Privacidade.
+- Deve conter obrigatoriamente: telefone oficial e e-mail oficial **contato@smconsultoriati.com.br**.
+- Cores e estilos devem ser os mesmos da Home: texto `#ABB4C2`, fundo `#1B1E22` (ou cor definida atualmente para o rodapé), sem caixas adicionais e sem sombras extras.
+- A estrutura HTML deve ser replicada sem modificações ou variações.
 
 ---
 
