@@ -764,65 +764,43 @@ header {
     }
 }
 
-
-/* --- FOOTER SOCIAL ICONS OFFSET (PASSO 5) --- */
-@media (max-width: 1024px) {
-    .footer-right {
-        margin-bottom: 65px;
-    }
-}
-
-
-/* =================== LEGAL PAGES (TERMOS & PRIVACIDADE) =================== */
-.legal-page .section .container {
-    background: #FFFFFF;
-    border-radius: 14px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
-    margin: 40px auto;
-    padding: 32px;
-    max-width: 1200px;
-}
-
-/* Tablet + mobile refinements for legal pages */
-@media (max-width: 1024px) {
-    .legal-page .section .container {
-        margin: 40px 30px;
-        padding: 26px;
-    }
-}
-
+/* === FOOTER PREMIUM STRUCTURE (MOBILE) === */
 @media (max-width: 768px) {
-    .legal-page .section .container {
-        margin: 32px 24px;
-        padding: 22px;
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .legal-page h1 {
-        font-size: 1.9rem;
-        line-height: 2.3rem;
-        margin-bottom: 1rem;
+    /* 1 - Logo */
+    .footer-logo-container {
+        order: 1;
     }
 
-    .legal-page h2 {
-        margin-top: 1.6rem;
-        margin-bottom: 0.6rem;
+    /* 2 - Direitos reservados */
+    .footer-info {
+        order: 2;
     }
 
-    .legal-page p {
-        margin-bottom: 0.75rem;
-    }
-}
-
-/* =================== HEADER OFFSET SAFEGUARD (TABLET RANGE) =================== */
-/* Garante que o conteúdo nunca fique sob o header fixo entre 769px e 1024px */
-@media (min-width: 769px) and (max-width: 1024px) {
-    /* Hero da home ganha folga extra */
-    .hero {
-        padding-top: 170px;
+    /* 3 - Redes Sociais */
+    .footer-social-links {
+        order: 3;
+        margin-top: 12px !important;
+        margin-bottom: 12px !important;
     }
 
-    /* Páginas legais (Termos & Privacidade) recebem folga extra no topo da seção principal */
-    .legal-page .section {
-        padding-top: 140px;
+    /* 4 - Política de Privacidade + Termos */
+    .footer-links {
+        order: 4;
+        margin-top: 8px !important;
+        margin-bottom: 8px !important;
+    }
+
+    /* 5 - E-mail e telefone */
+    .footer-email {
+        order: 5;
+        margin-top: 12px !important;
+        margin-bottom: 0 !important;
     }
 }
