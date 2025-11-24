@@ -90,7 +90,6 @@ img {
     border-radius: 8px;
     background-color: rgba(255, 255, 255, 0.05);
     transition: all 0.3s ease;
-    margin-right: auto;
 }
 
 .logo:hover {
@@ -152,6 +151,30 @@ img {
 
 .header.shrink .logo-img {
     height: 40px;
+}
+
+/* =================== RESPONSIVE HEADER =================== */
+@media (max-width: 1024px) {
+    .header-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 14px 0;
+    }
+
+    .logo {
+        margin-right: 0;
+    }
+
+    .nav {
+        flex: 0 1 auto;
+        width: 100%;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .nav-btn {
+        margin-left: 0;
+    }
 }
 
 /* =================== HERO =================== */
