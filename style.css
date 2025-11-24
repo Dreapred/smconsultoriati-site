@@ -151,7 +151,7 @@ img {
 /* =================== HERO =================== */
 .hero {
     position: relative;
-    padding: 140px 0 110px;
+    padding: 150px 0 110px;
     min-height: 85vh;
     display: flex;
     align-items: center;
@@ -186,6 +186,7 @@ img {
     align-items: center;
     justify-content: center;
     max-width: 900px;
+    width: 100%;
 }
 
 .hero-text h1 {
@@ -292,6 +293,40 @@ input[type="submit"]:hover {
 
 .section.light {
     background: var(--surface-color);
+}
+
+/* =================== LEGAL PAGES =================== */
+.legal-page {
+    background: var(--bg-color);
+}
+
+.legal-page .section.light:first-of-type {
+    padding-top: 160px;
+}
+
+.legal-page .section .container {
+    background: #fff;
+    margin: 40px auto;
+    padding: 32px;
+    border-radius: 14px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    max-width: 1200px;
+}
+
+.legal-page h1 {
+    font-size: 2.2rem;
+    margin-bottom: 16px;
+}
+
+.legal-page h2 {
+    margin-top: 28px;
+    font-size: 1.35rem;
+}
+
+.legal-page p,
+.legal-page li {
+    color: var(--text-color);
+    line-height: 1.7;
 }
 
 .section-title {
@@ -435,6 +470,24 @@ input[type="submit"]:hover {
     box-shadow: 0 18px 40px rgba(0, 0, 0, 0.10);
     text-align: center;
     transition: all 0.3s ease;
+}
+
+.contact-note {
+    max-width: 760px;
+    margin: 0 auto 32px;
+    color: var(--muted-text);
+    font-size: 1.05rem;
+    line-height: 1.65;
+    text-align: center;
+}
+
+.contact-note a {
+    color: var(--primary-dark);
+    text-decoration: none;
+}
+
+.contact-note a:hover {
+    color: var(--primary-color);
 }
 
 .contact-box:hover {
@@ -640,20 +693,24 @@ input[type="submit"]:hover {
     }
 
     .hero {
-        padding: 140px 0 80px;
+        padding: 160px 0 90px;
         min-height: 70vh;
     }
 
+    .hero-text {
+        max-width: 88%;
+    }
+
     .hero-text h1 {
-        font-size: 2.5rem;
+        font-size: 2.3rem;
     }
 
     .hero-text p {
-        font-size: 1.1rem;
+        font-size: 1.08rem;
     }
 
     .section {
-        padding: 70px 0;
+        padding: 80px 0;
     }
 
     .section-title {
@@ -661,7 +718,7 @@ input[type="submit"]:hover {
     }
 
     .subtitle {
-        font-size: 1.1rem;
+        font-size: 1.08rem;
         margin-bottom: 40px;
     }
 
@@ -681,6 +738,24 @@ input[type="submit"]:hover {
         margin: 0 16px;
     }
 
+    .contact-note {
+        margin-bottom: 24px;
+        padding: 0 12px;
+    }
+
+    .legal-page .section.light:first-of-type {
+        padding-top: 150px;
+    }
+
+    .legal-page .section .container {
+        margin: 32px auto;
+        padding: 26px;
+    }
+
+    .legal-page h1 {
+        font-size: 2rem;
+    }
+
     .footer-links {
         flex-direction: column;
         gap: 12px;
@@ -689,16 +764,55 @@ input[type="submit"]:hover {
     .footer-logo {
         height: 80px;
     }
+
+    .footer {
+        padding-bottom: 110px;
+    }
+
+    .footer-container {
+        gap: 16px;
+    }
+
+    /* === FOOTER PREMIUM STRUCTURE (MOBILE) === */
+    .footer-logo-container {
+        order: 1;
+    }
+
+    .footer-info {
+        order: 2;
+    }
+
+    .footer-social-links {
+        order: 3;
+        margin-top: 12px !important;
+        margin-bottom: 12px !important;
+    }
+
+    .footer-links {
+        order: 4;
+        margin-top: 8px !important;
+        margin-bottom: 8px !important;
+    }
+
+    .footer-email {
+        order: 5;
+        margin-top: 12px !important;
+        margin-bottom: 0 !important;
+    }
 }
 
 @media (max-width: 480px) {
     .hero {
-        padding: 100px 0 70px;
+        padding: 170px 0 90px;
         min-height: auto;
     }
 
+    .hero-text {
+        max-width: 90%;
+    }
+
     .hero-text h1 {
-        font-size: 1.9rem;
+        font-size: 2rem;
         line-height: 1.2;
     }
 
@@ -706,6 +820,10 @@ input[type="submit"]:hover {
         font-size: 1rem;
         max-width: 90%;
         margin: 0 auto 24px;
+    }
+
+    .section {
+        padding: 70px 0;
     }
 
     .section-title {
@@ -721,51 +839,29 @@ input[type="submit"]:hover {
         line-height: 1.4 !important;
         white-space: normal !important;
     }
-}
 
-    .hero-text p {
+    .contact-note {
+        margin-bottom: 20px;
         font-size: 1rem;
     }
 
-    .section-title {
+    .legal-page .section.light:first-of-type {
+        padding-top: 150px;
+    }
+
+    .legal-page .section .container {
+        margin: 28px auto;
+        padding: 22px;
+    }
+
+    .legal-page h1 {
         font-size: 1.8rem;
     }
 
-    .btn-primary,
-    .btn-secondary,
-    .nav-btn,
-    .hero-btn {
-        padding: 12px 24px !important;
-        font-size: 0.95rem !important;
+    .legal-page h2 {
+        margin-top: 22px;
+        font-size: 1.25rem;
     }
-}
-/* Header Compact Premium */
-header {
-    padding: 8px 0 !important;
-    box-shadow: 0 4px 18px rgba(0,0,0,0.18);
-}
-@media (max-width: 480px) {
-    header {
-        padding: 6px 0 !important;
-    }
-}
-
-@media (max-width: 480px) {
-    nav ul li a {
-        padding: 4px 6px !important;
-    }
-}
-
-@media (max-width: 480px) {
-    .btn-menu-contact {
-        padding: 6px 18px !important;
-        font-size: 0.9rem !important;
-        border-radius: 10px !important;
-    }
-}
-
-/* === FOOTER PREMIUM STRUCTURE (MOBILE) === */
-@media (max-width: 768px) {
 
     .footer-container {
         display: flex;
@@ -773,31 +869,27 @@ header {
         align-items: center;
     }
 
-    /* 1 - Logo */
+    /* === FOOTER PREMIUM STRUCTURE (MOBILE) === */
     .footer-logo-container {
         order: 1;
     }
 
-    /* 2 - Direitos reservados */
     .footer-info {
         order: 2;
     }
 
-    /* 3 - Redes Sociais */
     .footer-social-links {
         order: 3;
         margin-top: 12px !important;
         margin-bottom: 12px !important;
     }
 
-    /* 4 - Política de Privacidade + Termos */
     .footer-links {
         order: 4;
         margin-top: 8px !important;
         margin-bottom: 8px !important;
     }
 
-    /* 5 - E-mail e telefone */
     .footer-email {
         order: 5;
         margin-top: 12px !important;
