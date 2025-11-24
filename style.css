@@ -678,6 +678,9 @@ input[type="submit"]:hover {
 }
 
 .footer-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
     color: #00ABFF;
     text-decoration: none;
     font-weight: 600;
@@ -687,6 +690,19 @@ input[type="submit"]:hover {
     border-radius: 10px;
     border: 1px solid rgba(0, 119, 204, 0.35);
     background: linear-gradient(120deg, rgba(0, 171, 255, 0.12) 0%, rgba(0, 119, 204, 0.12) 100%);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+}
+
+.footer-link-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: linear-gradient(120deg, rgba(0, 171, 255, 0.22) 0%, rgba(0, 119, 204, 0.18) 100%);
+    color: #005499;
+    font-size: 1rem;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
 }
 
