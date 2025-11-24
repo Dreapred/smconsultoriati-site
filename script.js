@@ -172,53 +172,80 @@ document.addEventListener('DOMContentLoaded', () => {
     document.head.appendChild(style);
 
     // ================= TEXTO DE ATENDIMENTO OFFLINE (CHAT) =================
-    const offlineMessage = 'Atendimento Offline – Nosso horário é de Segunda a Sexta, das 08h às 12h e das 13h30 às 18h.';
+    const offlineTitle = 'Atendimento Offline';
+    const offlineMessage = 'Nosso horário é de Segunda a Sexta, das 08h às 12h e das 13h30 às 18h.';
 
-    const replaceOfflineMessage = () => {
-        const selectors = [
+    const replaceOfflineContent = () => {
+        const titleSelectors = [
             '.tt-widget-status-offline',
             '.tt-offline-status',
             '.tt-offline',
             '.ttStatusOffline',
-            '.tt-offline-title',
-            '.tt-offline-info'
+            '.tt-offline-title'
         ];
 
-        let updated = false;
+        const messageSelectors = [
+            '.tt-offline-info',
+            '.tt-offline-message',
+            '.tt-offline-description',
+            '.tt-offline-text'
+        ];
 
-        selectors.forEach(selector => {
+        let titleUpdated = false;
+        let messageUpdated = false;
+
+        titleSelectors.forEach(selector => {
             document.querySelectorAll(selector).forEach(element => {
                 if (element.textContent && element.textContent.trim().startsWith('Atendimento Offline')) {
-                    element.textContent = offlineMessage;
-                    updated = true;
+                    element.textContent = offlineTitle;
+                    titleUpdated = true;
                 }
             });
         });
 
-        if (!updated) {
-            const fallback = Array.from(document.querySelectorAll('div, span, p, strong, h4')).find(el => {
+        messageSelectors.forEach(selector => {
+            document.querySelectorAll(selector).forEach(element => {
+                element.textContent = offlineMessage;
+                messageUpdated = true;
+            });
+        });
+
+        if (!titleUpdated) {
+            const fallbackTitle = Array.from(document.querySelectorAll('div, span, p, strong, h4')).find(el => {
                 const text = el.textContent?.trim();
                 return text && text.startsWith('Atendimento Offline');
             });
 
-            if (fallback) {
-                fallback.textContent = offlineMessage;
-                updated = true;
+            if (fallbackTitle) {
+                fallbackTitle.textContent = offlineTitle;
+                titleUpdated = true;
             }
         }
 
-        return updated;
+        if (!messageUpdated) {
+            const fallbackMessage = Array.from(document.querySelectorAll('div, span, p, strong, h4')).find(el => {
+                const text = el.textContent?.trim();
+                return text && (text.includes('horário') || text.includes('Atendimento Offline'));
+            });
+
+            if (fallbackMessage) {
+                fallbackMessage.textContent = offlineMessage;
+                messageUpdated = true;
+            }
+        }
+
+        return titleUpdated && messageUpdated;
     };
 
     const observeOfflineLabel = () => {
         const observer = new MutationObserver((_, obs) => {
-            if (replaceOfflineMessage()) {
+            if (replaceOfflineContent()) {
                 obs.disconnect();
             }
         });
 
         observer.observe(document.body, { childList: true, subtree: true });
-        replaceOfflineMessage();
+        replaceOfflineContent();
     };
 
     window.addEventListener('load', observeOfflineLabel);
