@@ -219,7 +219,7 @@ img {
 .btn-secondary,
 .nav-btn,
 .hero-btn,
-.contact-box a[class*="btn"],
+.form-wrapper-principal a[class*="btn"],
 button[type="submit"],
 input[type="submit"] {
     background: var(--gradient-primary) !important;
@@ -267,7 +267,7 @@ input[type="submit"] {
 .btn-secondary:hover,
 .nav-btn:hover,
 .hero-btn:hover,
-.contact-box a[class*="btn"]:hover,
+.form-wrapper-principal a[class*="btn"]:hover,
 button[type="submit"]:hover,
 input[type="submit"]:hover {
     background: var(--primary-color) !important;
@@ -461,99 +461,34 @@ input[type="submit"]:hover {
 }
 
 /* =================== CONTACT (Integrado ao site) =================== */
-.contact-box {
-    max-width: 800px;
-    margin: 0 auto;
-    background: var(--surface-color);
-    padding: 48px 40px;
-    border-radius: 20px;
-    border: 1px solid rgba(0, 171, 255, 0.10);
-    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.10);
+.form-wrapper-principal {
+    max-width: 860px;
+    margin: 22px auto 0;
+    background: #ffffff;
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
     text-align: center;
     transition: all 0.3s ease;
 }
 
-.contact-note {
-    max-width: 760px;
-    margin: 0 auto 32px;
-    color: var(--muted-text);
-    font-size: 1.05rem;
-    line-height: 1.65;
-    text-align: center;
-}
-
-.contact-note a {
-    color: var(--primary-dark);
-    text-decoration: none;
-}
-
-.contact-note a:hover {
-    color: var(--primary-color);
-}
-
-.contact-box:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 22px 55px rgba(0, 0, 0, 0.14);
-}
-
-.contact-box p {
-    margin-bottom: 24px;
+.contact-form-title {
     color: var(--text-color);
-    font-size: 1.1rem;
-    line-height: 1.65;
-    font-weight: 500;
-}
-
-/* Título / texto "Já é cliente?" */
-.helpdesk-msg {
-    margin: 28px 0 16px;
-    font-weight: 600;
-    color: var(--text-color);
-    font-size: 1.1rem;
-}
-
-/* Divider padrão do site */
-.contact-divider {
-    margin: 32px 0;
-    position: relative;
-    text-align: center;
-}
-
-.contact-divider::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, var(--muted-text), transparent);
-}
-
-.contact-divider span {
-    background: var(--surface-color);
-    padding: 0 20px;
-    color: var(--muted-text);
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1.6;
+    margin-bottom: 22px;
 }
 
 /* ======== Estilização do iframe TomTicket ======== */
-.contact-box iframe {
+.form-wrapper-principal iframe {
     width: 100% !important;
-    min-height: 560px; /* altura equilibrada */
-    margin-top: 16px;
-    border: 1px solid rgba(0, 0, 0, 0.08);
-    border-radius: 16px;
+    min-height: 560px;
+    border: 1px solid #D0D4DC;
+    border-radius: 10px;
     background: #ffffff;
-    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.06);
     padding: 0;
-}
-
-/* ======== Hover premium do iframe (só estética externa) ======== */
-.contact-box iframe:hover {
-    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.10);
-    transition: 0.25s ease;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
 }
 
 /* =================== FOOTER =================== */
@@ -734,14 +669,9 @@ input[type="submit"]:hover {
         padding: 32px 24px;
     }
 
-    .contact-box {
-        padding: 32px 24px;
+    .form-wrapper-principal {
+        padding: 30px 22px;
         margin: 0 16px;
-    }
-
-    .contact-note {
-        margin-bottom: 24px;
-        padding: 0 12px;
     }
 
     .legal-page .section.light:first-of-type {
@@ -841,9 +771,22 @@ input[type="submit"]:hover {
         white-space: normal !important;
     }
 
-    .contact-note {
-        margin-bottom: 20px;
-        font-size: 1rem;
+    #contact .section-title {
+        font-size: 1.35rem;
+    }
+
+    .form-wrapper-principal {
+        padding: 22px 16px;
+        margin: 0 10px;
+    }
+
+    .contact-form-title {
+        font-size: 1.1rem;
+        margin-bottom: 18px;
+    }
+
+    .form-wrapper-principal iframe {
+        min-height: 520px;
     }
 
     .legal-page .section.light:first-of-type {
