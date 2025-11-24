@@ -200,6 +200,65 @@ img {
     margin-bottom: 30px;
 }
 
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    margin-bottom: 16px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    border-radius: 999px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 22px;
+}
+
+.hero-list {
+    list-style: none;
+    display: grid;
+    gap: 12px;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 720px;
+    text-align: left;
+}
+
+.hero-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 12px 14px;
+    border-radius: 12px;
+    color: #e8f4ff;
+    box-shadow: 0 8px 26px rgba(0, 0, 0, 0.12);
+}
+
+.check-icon {
+    width: 26px;
+    height: 26px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(0, 171, 255, 0.14);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: #ffffff;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
 .hero-btn {
     font-size: 1.1rem !important;
     padding: 16px 32px !important;
@@ -284,6 +343,13 @@ input[type="submit"]:hover {
 
 .btn-secondary:hover {
     background: var(--primary-color) !important;
+}
+
+.hero .btn-secondary {
+    background: rgba(255, 255, 255, 0.08) !important;
+    border: 1px solid rgba(255, 255, 255, 0.25) !important;
+    color: #ffffff !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18) !important;
 }
 
 /* =================== SECTION BASE =================== */
@@ -458,6 +524,61 @@ input[type="submit"]:hover {
     flex: 1;
     line-height: 1.5;
     font-size: 1.05rem;
+}
+
+/* =================== HIGHLIGHTS =================== */
+.highlights {
+    background: linear-gradient(135deg, #0f172a 0%, #111827 55%, #0b1623 100%);
+}
+
+.highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 18px;
+}
+
+.highlight-card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(0, 171, 255, 0.2);
+    border-radius: 16px;
+    padding: 22px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.16);
+    color: #e5f5ff;
+    backdrop-filter: blur(6px);
+    position: relative;
+    overflow: hidden;
+    text-align: left;
+}
+
+.highlight-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 20% 20%, rgba(0, 171, 255, 0.18), transparent 35%);
+    pointer-events: none;
+}
+
+.highlight-label {
+    font-size: 0.95rem;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.highlight-value {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.highlight-desc {
+    color: rgba(229, 245, 255, 0.9);
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
 }
 
 /* =================== CONTACT (Integrado ao site) =================== */
@@ -645,6 +766,18 @@ input[type="submit"]:hover {
         font-size: 1.08rem;
     }
 
+    .hero-actions {
+        gap: 10px;
+    }
+
+    .hero-list {
+        text-align: center;
+    }
+
+    .hero-list li {
+        justify-content: center;
+    }
+
     .section {
         padding: 80px 0;
     }
@@ -662,6 +795,10 @@ input[type="submit"]:hover {
     .grid-why {
         grid-template-columns: 1fr;
         gap: 24px;
+    }
+
+    .highlight-grid {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     }
 
     .service-card,
