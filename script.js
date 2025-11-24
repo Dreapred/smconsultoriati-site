@@ -171,5 +171,57 @@ document.addEventListener('DOMContentLoaded', () => {
     `;
     document.head.appendChild(style);
 
+    // ================= TEXTO DE ATENDIMENTO OFFLINE (CHAT) =================
+    const offlineMessage = 'Atendimento Offline – Nosso horário é de Segunda a Sexta, das 08h às 12h e das 13h30 às 18h.';
+
+    const replaceOfflineMessage = () => {
+        const selectors = [
+            '.tt-widget-status-offline',
+            '.tt-offline-status',
+            '.tt-offline',
+            '.ttStatusOffline',
+            '.tt-offline-title',
+            '.tt-offline-info'
+        ];
+
+        let updated = false;
+
+        selectors.forEach(selector => {
+            document.querySelectorAll(selector).forEach(element => {
+                if (element.textContent && element.textContent.trim().startsWith('Atendimento Offline')) {
+                    element.textContent = offlineMessage;
+                    updated = true;
+                }
+            });
+        });
+
+        if (!updated) {
+            const fallback = Array.from(document.querySelectorAll('div, span, p, strong, h4')).find(el => {
+                const text = el.textContent?.trim();
+                return text && text.startsWith('Atendimento Offline');
+            });
+
+            if (fallback) {
+                fallback.textContent = offlineMessage;
+                updated = true;
+            }
+        }
+
+        return updated;
+    };
+
+    const observeOfflineLabel = () => {
+        const observer = new MutationObserver((_, obs) => {
+            if (replaceOfflineMessage()) {
+                obs.disconnect();
+            }
+        });
+
+        observer.observe(document.body, { childList: true, subtree: true });
+        replaceOfflineMessage();
+    };
+
+    window.addEventListener('load', observeOfflineLabel);
+
     console.log('S&M Consultoria TI - Script carregado com sucesso!');
 });
