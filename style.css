@@ -1,18 +1,18 @@
 /* =================== CSS VARIÁVEIS =================== */
 :root {
     --primary-color: #00ABFF;
-    --primary-dark: #005499;
-    --primary-light: #3AC5FF;
+    --primary-dark: #0077CC;
+    --primary-light: #00ABFF;
     --secondary-color: #1B1E22;
     --accent-color: #0077CC;
-    --bg-color: #F4F7FB;
+    --bg-color: #E8E8E8;
     --surface-color: #FFFFFF;
     --text-color: #1B1E22;
     --muted-text: #33303E;
     --card-shadow: rgba(0, 0, 0, 0.08);
     --hover-shadow: rgba(0, 0, 0, 0.12);
-    --gradient-primary: linear-gradient(135deg, #0b7fd8 0%, var(--primary-color) 55%, var(--primary-light) 100%);
-    --gradient-hero: linear-gradient(140deg, #0c2f4a 0%, #0b5fa3 45%, var(--primary-color) 100%);
+    --gradient-primary: linear-gradient(90deg, #00ABFF 0%, #0077CC 100%);
+    --gradient-hero: linear-gradient(140deg, rgba(27, 30, 34, 0.96) 0%, #1B1E22 38%, #0077CC 70%, #00ABFF 100%);
     --header-height: 96px;
 }
 
@@ -61,7 +61,7 @@ img {
     top: 0;
     left: 0;
     width: 100%;
-    background: linear-gradient(120deg, rgba(27, 30, 34, 0.98) 0%, rgba(12, 47, 74, 0.94) 55%, rgba(0, 171, 255, 0.92) 100%);
+    background: var(--gradient-hero);
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
     z-index: 1000;
@@ -246,7 +246,7 @@ img {
     border: 1px solid rgba(0, 171, 255, 0.22);
     padding: 12px 14px;
     border-radius: 12px;
-    color: #e8f4ff;
+    color: #E8E8E8;
     box-shadow: 0 8px 26px rgba(0, 0, 0, 0.12);
 }
 
@@ -351,9 +351,10 @@ input[type="submit"]:hover {
 }
 
 .hero .btn-secondary {
-    background: rgba(255, 255, 255, 0.12) !important;
-    border: 1px solid rgba(255, 255, 255, 0.28) !important;
-    color: #ffffff !important;
+    background: linear-gradient(90deg, #00ABFF 0%, #0077CC 100%) !important;
+    color: #FFFFFF !important;
+    border-radius: 10px !important;
+    font-weight: 600 !important;
     box-shadow: 0 10px 26px rgba(0, 0, 0, 0.18) !important;
 }
 
@@ -533,7 +534,7 @@ input[type="submit"]:hover {
 
 /* =================== HIGHLIGHTS =================== */
 .highlights {
-    background: linear-gradient(135deg, #0c2036 0%, #0c2f4a 50%, #0b5fa3 100%);
+    background: linear-gradient(135deg, #1B1E22 0%, #0077CC 60%, #00ABFF 100%);
 }
 
 .highlight-grid {
@@ -548,7 +549,7 @@ input[type="submit"]:hover {
     border-radius: 16px;
     padding: 22px;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.16);
-    color: #e8f4ff;
+    color: #E8E8E8;
     backdrop-filter: blur(6px);
     position: relative;
     overflow: hidden;
@@ -560,7 +561,7 @@ input[type="submit"]:hover {
     position: absolute;
     inset: 0;
     background: radial-gradient(circle at 20% 20%, rgba(0, 171, 255, 0.18), transparent 32%),
-                radial-gradient(circle at 80% 60%, rgba(58, 197, 255, 0.12), transparent 30%);
+                radial-gradient(circle at 80% 60%, rgba(0, 119, 204, 0.16), transparent 30%);
     pointer-events: none;
 }
 
@@ -581,7 +582,7 @@ input[type="submit"]:hover {
 }
 
 .highlight-desc {
-    color: rgba(229, 245, 255, 0.9);
+    color: rgba(255, 255, 255, 0.9);
     font-size: 1rem;
     line-height: 1.5;
     margin: 0;
@@ -611,7 +612,7 @@ input[type="submit"]:hover {
 .form-wrapper-principal iframe {
     width: 100% !important;
     min-height: 560px;
-    border: 1px solid #D0D4DC;
+    border: 1px solid #ABB4C2;
     border-radius: 10px;
     background: #ffffff;
     padding: 0;
@@ -620,8 +621,8 @@ input[type="submit"]:hover {
 
 /* =================== FOOTER =================== */
 .footer {
-    background: linear-gradient(135deg, #0c2036 0%, #0c2f4a 55%, #1B1E22 100%);
-    color: #94A3B8;
+    background: linear-gradient(135deg, #1B1E22 0%, #1B1E22 38%, #0077CC 70%, #00ABFF 100%);
+    color: #ABB4C2;
     padding: 60px 0 30px;
     text-align: center;
 }
