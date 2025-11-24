@@ -676,7 +676,7 @@ input[type="submit"]:hover {
 }
 
 .footer-links a {
-    color: var(--primary-color);
+    color: #00ABFF;
     text-decoration: none;
     font-weight: 500;
     transition: all 0.3s ease;
@@ -685,7 +685,7 @@ input[type="submit"]:hover {
 }
 
 .footer-links a:hover {
-    color: var(--primary-light);
+    color: #FFFFFF;
     background: rgba(255, 255, 255, 0.05);
 }
 
